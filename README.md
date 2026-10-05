@@ -56,13 +56,13 @@ Kogu on järjestatud **5 tasandiks**. Alusta alati 1. tasemest — iga järgmine
 
 | # | Dokument | Kirjeldus | Olek |
 | --- | --- | --- | --- |
-| 4.1 | Agendi süsteemid: mis need on ja millal vaja | Agendid, kes plaanivad ja tegutsevad iseseisvalt, ning nende sobivus | 📋 |
-| 4.2 | RAG: oma andmete kasutamine vastuste allikana | Otsinguga täiendatud genereerimine ja oma teadmusbassi kasutamine | 📋 |
-| 4.3 | Pikaaegne mälu ja oleku haldus | Kuidas hoida infot ja olekut seansside vahel | 📋 |
-| 4.4 | Mitme agendi arhitektuurid | Kuidas jagada keeruka ülesande töö mitme agendi vahel | 📋 |
-| 4.5 | Hindamine: kuidas teada, kas süsteem on hea | Hindamismeetodid, testikomplektid ja kvaliteedi mõõtmine | 📋 |
-| 4.6 | Monitooring tootmises | Jälgimine, hoiatused ja kvaliteedi uurimine reaalses kasutuses | 📋 |
-| 4.7 | Jõudlus ja latentsus | Kiiruse optimeerimine ja kasutajakogemuse parandamine | 📋 |
+| 4.1 | [Agendi süsteemid: mis need on ja millal vaja](04-agendid-ja-mootmine/01-agendi-susteemid.md) | Agendid, kes plaanivad ja tegutsevad iseseisvalt, ning nende sobivus | ✅ |
+| 4.2 | [RAG: oma andmete kasutamine vastuste allikana](04-agendid-ja-mootmine/02-rag.md) | Otsinguga täiendatud genereerimine ja oma teadmusbassi kasutamine | ✅ |
+| 4.3 | [Pikaaegne mälu ja oleku haldus](04-agendid-ja-mootmine/03-pikaaegne-malu.md) | Kuidas hoida infot ja olekut seansside vahel | ✅ |
+| 4.4 | [Mitme agendi arhitektuurid](04-agendid-ja-mootmine/04-mitme-agendi-arhitektuurid.md) | Kuidas jagada keeruka ülesande töö mitme agendi vahel | ✅ |
+| 4.5 | [Hindamine: kuidas teada, kas süsteem on hea](04-agendid-ja-mootmine/05-hindamine.md) | Hindamismeetodid, testikomplektid ja kvaliteedi mõõtmine | ✅ |
+| 4.6 | [Monitooring tootmises](04-agendid-ja-mootmine/06-monitooring.md) | Jälgimine, hoiatused ja kvaliteedi uurimine reaalses kasutuses | ✅ |
+| 4.7 | [Jõudlus ja latentsus](04-agendid-ja-mootmine/07-joudlus-ja-latentsus.md) | Kiiruse optimeerimine ja kasutajakogemuse parandamine | ✅ |
 
 ### 5. tase — Suurte projektide professionaalne tase (`05-suurte-projektide-tase/`)
 
