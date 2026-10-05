@@ -26,8 +26,8 @@ Kogu on järjestatud **5 tasandiks**. Alusta alati 1. tasemest — iga järgmine
 | 1.2 | [Võimalused ja piirid: mida automatiseerida tasub](01-alused/02-voimalused-ja-piirid.md) | Millised ülesanded sobivad AI-le ja millised mitte, kuidas otsustada | ✅ |
 | 1.3 | [Promptide põhitõed](01-alused/03-promptide-pohitoed.md) | Kuidas kirjutada mudelile selgeid ja töökindlaid juhiseid | ✅ |
 | 1.4 | [Kus AI-automatiseerimine juba töötab: kasutujuhtumid](01-alused/04-kasutujuhtumid.md) | Tüüpilised kasutusalad ja näited sellest, mida organisatsioonid AI-ga automatiseerivad | ✅ |
-| 1.5 | AI-automatiseeritud süsteemi anatoomia | Süsteemi põhiosad: sisend, mudel, väljund ja kontroll | 📋 |
-| 1.6 | Rollid ja vastutus projektis | Kes mida teeb: tellija, analüütik, arendaja ja kontrollija rollid | 📋 |
+| 1.5 | [AI-automatiseeritud süsteemi anatoomia](01-alused/05-susteemi-anatoomia.md) | Süsteemi seitse osa: käivitaja, sisendandmed, juhis, mudel, kontrollpunkt, väljund ja andmete hoidmine | ✅ |
+| 1.6 | [Rollid ja vastutus projektis](01-alused/06-rollid-ja-vastutus.md) | Viis rolli (tellija, ehitaja, sisukujundaja, kontrollija, haldaja) ja vastutus AI vea eest | ✅ |
 
 ### 2. tase — Praktika (`02-praktika/`)
 
