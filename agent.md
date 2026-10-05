@@ -30,6 +30,14 @@ Dokumendid peavad rahuldama **kahte lugejat korraga**:
 - Kui teema nõuab sügavust, tee vahet: "Mis see on ja miks?" (kõigile) ja "Kuidas täpselt teha?" (tehnilisele lugejale).
 - Kasuta näiteid, samm-sammulisi juhiseid ja tabelit/konstruktsioone, mis muudavad teksti loetavaks.
 
+### Stiilistandardid (kinnitatud)
+
+- Jutumärgid: eesti stiil „...“ (mitte sirged jutumärgid).
+- Liitsõnad AI-ga sidekriipsuga: AI-mudel, AI-agent, AI-automatiseerimine.
+- Ingliskeelne mõiste selgitatakse esimesel kasutamisel: „termine (eestikeelne vaste)“.
+- Failinimed ja kaustad: ainult tähestikulised tähed ja sidekriipsud, ilma täpitähtedeta.
+- Igas dokumendis: sihtpubliku rida, „Lihtsalt öeldes“ kast, „Mis edasi?“ lingid ja jaluses „Viimati uuendatud“ kuupäev.
+
 ## 4. Dokumentide struktuur
 
 - **`README.md` on projekti index-fail** — sisukord, mis lingib kõikidele teistele markdown-dokumentidele.
