@@ -44,13 +44,13 @@ Kogu on järjestatud **5 tasandiks**. Alusta alati 1. tasemest — iga järgmine
 
 | # | Dokument | Kirjeldus | Olek |
 | --- | --- | --- | --- |
-| 3.1 | API integratsioonid: mudel programmist välja kutsuda | Kuidas kutsuda mudelit koodist ja ehitada mudel oma süsteemi sisse | 📋 |
-| 3.2 | Konteksti haldamine: kuidas mudel „mäletab“ | Kontekstiakna kasutamine ja info hoidmine vestluse jooksul | 📋 |
-| 3.3 | Tööriistad ja tegevused: lase mudelil tegutseda | Funktsioonide kutsumine ja väliste süsteemide kasutamine mudeli poolt | 📋 |
-| 3.4 | Vead ja veakäsitlus | Mida teha, kui mudel eksib või süsteemi osa ebaõnnestub | 📋 |
-| 3.5 | Ohutus: piirid ja inimene kinnitusahelas | Kuidas piirata mudeli tegevust ja kaasata inimene otsustusse | 📋 |
-| 3.6 | Kulude haldamine: tokenid, hinnad, eelarve | Kulude mõõtmine, prognoosimine ja juhtimine | 📋 |
-| 3.7 | Turvalisus: võtmed, andmed, pahatahtlikud juhised | API-võtmete haldus, andmekaitse ja prompt injectioni tõrje | 📋 |
+| 3.1 | [API integratsioonid: mudel programmist välja kutsuda](03-susteemi-ulesehitus/01-api-integratsioonid.md) | Kuidas kutsuda mudelit koodist ja ehitada mudel oma süsteemi sisse | ✅ |
+| 3.2 | [Konteksti haldamine: kuidas mudel „mäletab“](03-susteemi-ulesehitus/02-konteksti-haldamine.md) | Kontekstiakna kasutamine ja info hoidmine vestluse jooksul | ✅ |
+| 3.3 | [Tööriistad ja tegevused: lase mudelil tegutseda](03-susteemi-ulesehitus/03-tooriistad-ja-tegevused.md) | Funktsioonide kutsumine ja väliste süsteemide kasutamine mudeli poolt | ✅ |
+| 3.4 | [Vead ja veakäsitlus](03-susteemi-ulesehitus/04-vead-ja-veakasitlus.md) | Mida teha, kui mudel eksib või süsteemi osa ebaõnnestub | ✅ |
+| 3.5 | [Ohutus: piirid ja inimene kinnitusahelas](03-susteemi-ulesehitus/05-ohutus.md) | Kuidas piirata mudeli tegevust ja kaasata inimene otsustusse | ✅ |
+| 3.6 | [Kulude haldamine: tokenid, hinnad, eelarve](03-susteemi-ulesehitus/06-kulude-haldamine.md) | Kulude mõõtmine, prognoosimine ja juhtimine | ✅ |
+| 3.7 | [Turvalisus: võtmed, andmed, pahatahtlikud juhised](03-susteemi-ulesehitus/07-turvalisus.md) | API-võtmete haldus, andmekaitse ja prompt injectioni tõrje | ✅ |
 
 ### 4. tase — Agendid ja mõõtmine (`04-agendid-ja-mootmine/`)
 
