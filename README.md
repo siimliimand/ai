@@ -23,9 +23,9 @@ Kogu on järjestatud **5 tasandiks**. Alusta alati 1. tasemest — iga järgmine
 | # | Dokument | Kirjeldus | Olek |
 | --- | --- | --- | --- |
 | 1.1 | [Mis on AI-mudel ja kuidas ta „mõtleb“](01-alused/01-mis-on-ai-mudel.md) | Mis on keelemudel, kuidas ta töötab ja mida tema „mõtlemine“ tegelikult tähendab | ✅ |
-| 1.2 | Võimalused ja piirid: mida automatiseerida tasub | Millised ülesanded sobivad AI-le ja millised mitte, kuidas otsustada | 📋 |
-| 1.3 | Promptide põhitõed | Kuidas kirjutada mudelile selgeid ja töökindlaid juhiseid | 📋 |
-| 1.4 | Kus AI-automatiseerimine juba töötab: kasutujuhtumid | Reaalsed näited sellest, mida organisatsioonid on juba automatiseerinud | 📋 |
+| 1.2 | [Võimalused ja piirid: mida automatiseerida tasub](01-alused/02-voimalused-ja-piirid.md) | Millised ülesanded sobivad AI-le ja millised mitte, kuidas otsustada | ✅ |
+| 1.3 | [Promptide põhitõed](01-alused/03-promptide-pohitoed.md) | Kuidas kirjutada mudelile selgeid ja töökindlaid juhiseid | ✅ |
+| 1.4 | [Kus AI-automatiseerimine juba töötab: kasutujuhtumid](01-alused/04-kasutujuhtumid.md) | Tüüpilised kasutusalad ja näited sellest, mida organisatsioonid AI-ga automatiseerivad | ✅ |
 | 1.5 | AI-automatiseeritud süsteemi anatoomia | Süsteemi põhiosad: sisend, mudel, väljund ja kontroll | 📋 |
 | 1.6 | Rollid ja vastutus projektis | Kes mida teeb: tellija, analüütik, arendaja ja kontrollija rollid | 📋 |
 
@@ -33,7 +33,7 @@ Kogu on järjestatud **5 tasandiks**. Alusta alati 1. tasemest — iga järgmine
 
 | # | Dokument | Kirjeldus | Olek |
 | --- | --- | --- | --- |
-| 2.1 | Head promptini: struktuur, roll, näide, väljundi vorming | Kuidas koostada töökindlat prompti samm-sammult | 📋 |
+| 2.1 | Head promptini: struktuur, roll, näide, väljundi vorming | Süvenemine: promptimallid, versioonid ja testimine pikemas tsüklis | 📋 |
 | 2.2 | Struktureeritud väljund: tabelid, mallid ja JSON | Kuidas saada mudelilt ennustatavas vormis vastuseid | 📋 |
 | 2.3 | Workflow algtasandil: sammud ja tingimused | Mitmeosalised protsessid, otsustuspunktid ja tingimused | 📋 |
 | 2.4 | Sisendid ja andmete ettevalmistamine | Kuidas andmeid koguda, puhastada ja vormindada nii, et mudel saaks hästi töötada | 📋 |
