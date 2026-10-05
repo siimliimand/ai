@@ -14,7 +14,6 @@ Kogu on järjestatud **5 tasandiks**. Alusta alati 1. tasemest — iga järgmine
 | Olek | Tähendus |
 | --- | --- |
 | ✅ | Dokument on valmis ja loetav |
-| 📋 | Dokument on plaanis, sisu pole veel lisatud |
 
 ---
 
@@ -68,15 +67,15 @@ Kogu on järjestatud **5 tasandiks**. Alusta alati 1. tasemest — iga järgmine
 
 | # | Dokument | Kirjeldus | Olek |
 | --- | --- | --- | --- |
-| 5.1 | Arhitektuur suures mahus | Arhitektuurilised otsused ja mustrid suurtes süsteemides | 📋 |
-| 5.2 | Meeskonnatöö ja standardid | Standardid, töövoog ja dokumentatsioon meeskonnas | 📋 |
-| 5.3 | Turvalisus ja andmekaitse (GDPR, audit) | Õigusnõuded, andmekaitse ja auditeeritavus | 📋 |
-| 5.4 | Kulustrateegia suures mahus | Kulude planeerimine ja optimeerimine suurtes projektides | 📋 |
-| 5.5 | Mudelite vahetamine ja drift | Kuidas elada üle mudelite muutumist ja vahetust | 📋 |
-| 5.6 | Pidev täiustamine: mõõtmisest otsusteni | Kuidas viia mõõtmise andmed arukate otsusteni | 📋 |
-| 5.7 | Vastutus, eetika ja governance | Eetilised põhimõtted ja süsteemi juhtimine | 📋 |
-| 5.8 | Mallide teek: kontroll-loendid ja näidised | Valmis mallid ja kontroll-loendid praktiliseks kasutamiseks | 📋 |
+| 5.1 | [Arhitektuur suures mahus](05-suurte-projektide-tase/01-arhitektuur-suures-mahus.md) | Arhitektuurilised otsused ja mustrid suurtes süsteemides | ✅ |
+| 5.2 | [Meeskonnatöö ja standardid](05-suurte-projektide-tase/02-meeskonnatoo-ja-standardid.md) | Standardid, töövoog ja dokumentatsioon meeskonnas | ✅ |
+| 5.3 | [Turvalisus ja andmekaitse (GDPR, audit)](05-suurte-projektide-tase/03-turvalisus-ja-andmekaitse.md) | Õigusnõuded, andmekaitse ja auditeeritavus | ✅ |
+| 5.4 | [Kulustrateegia suures mahus](05-suurte-projektide-tase/04-kulustrateegia.md) | Kulude planeerimine ja optimeerimine suurtes projektides | ✅ |
+| 5.5 | [Mudelite vahetamine ja drift](05-suurte-projektide-tase/05-mudelite-vahetamine.md) | Kuidas elada üle mudelite muutumist ja vahetust | ✅ |
+| 5.6 | [Pidev täiustamine: mõõtmisest otsusteni](05-suurte-projektide-tase/06-pidev-taiustamine.md) | Kuidas viia mõõtmise andmed arukate otsusteni | ✅ |
+| 5.7 | [Vastutus, eetika ja governance](05-suurte-projektide-tase/07-vastutus-ja-eetika.md) | Eetilised põhimõtted ja süsteemi juhtimine | ✅ |
+| 5.8 | [Mallide teek: kontroll-loendid ja näidised](05-suurte-projektide-tase/08-mallide-teek.md) | Valmis mallid ja kontroll-loendid praktiliseks kasutamiseks | ✅ |
 
 ---
 
-Lisainfot ja muudatuste ajalugu leiad [CHANGELOG.md](CHANGELOG.md)-ist. Kogu täieneb järk-järgult.
+Käsiraamat on valmis: 34 dokumenti viies tasandis. Muudatuste ajalugu leiad [CHANGELOG.md](CHANGELOG.md)-ist.
