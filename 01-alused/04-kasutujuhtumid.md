@@ -1,6 +1,6 @@
 # 1.4 Kus AI-automatiseerimine juba töötab: kasutujuhtumid
 
-> **Sihtpublik:** kõik | **Eeltingimused:** [1.2 Võimalused ja piirid: mida automatiseerida tasub](02-voimalused-ja-piirid.md)
+> **Sihtpublik:** kõik | **Eeltingimused:** [1.2 Võimalused ja piirid: mida automatiseerida tasub](02-voimalused-ja-piirid.md) ja [1.3 Promptide põhitõed](03-promptide-pohitoed.md)
 
 ## Mis sa sellest õpid
 
@@ -37,7 +37,7 @@ Kõige levinum koht, kus AI-d juba kasutatakse, on kliendikirjade töötlus.
 
 > **Lihtsalt öeldes:** mudel, kellele fakte kaasa ei anta, ei keeldu vastamast — ta leiutab usutava vastuse. See on hallutsinatsioon (ingl k *hallucination* — mudeli kindlalt öeldud, aga vale vastus), ja klienditeeninduses tähendab see võõrast hinnakirja kliendile saatmist. Seepärast annab süsteem mudelile alati andmed kaasa ja inimene kinnitab enne saatmist.
 
-**Realistlik kasu.** Vastuse ettevalmistus lüheneb minutitest sekunditega ja klienditeenindaja päev vabaneb selle töö jaoks, mida masin teha ei oska — rahulolematu kliendi rahustamiseks ja erandite lahendamiseks.
+**Realistlik kasu.** Vastuse ettevalmistus lüheneb minutitest sekunditeks ja klienditeenindaja päev vabaneb selle töö jaoks, mida masin teha ei oska — rahulolematu kliendi rahustamiseks ja erandite lahendamiseks.
 
 ## Müük ja turundus
 
@@ -51,19 +51,19 @@ Kõige levinum koht, kus AI-d juba kasutatakse, on kliendikirjade töötlus.
 
 **Mida AI teeb.** Eraldab dokumentidest struktureeritud andmed — arvenumbri, kuupäeva, summa, tasuja — ja paneb need vormi, millest raamatupidamissüsteem aru saab (andmesisestus). Teeb pikkadest dokumentidest kokkuvõtted: leping, hangetingimused, kvartaliaruanne. Kirjutab rutiinsete e-kirjade kavandeid: kinnitus, meeldetuletus, vastus „sai kätte“.
 
-**Mida inimene teeb.** Kontrollib numbreid enne kinnitamist — raha juures pole „ligilähedast õigust“. Kui dokument on ebaselge, poolik või ebatavaline, suunab süsteemi selle inimesele, mitte ei paku.
+**Mida inimene teeb.** Kontrollib numbreid enne kinnitamist — raha juures pole „ligilähedast õigust“. Kui dokument on ebaselge, poolik või ebatavaline, suunab süsteem selle inimesele, mitte ei paku.
 
 **Realistlik kasu.** Ühe dokumendi käsitlemine lüheneb minutitest sekunditeks. Kümnete arvete või kirjade korral päevas on kogus mitu tundi nädalas — ilma et keegi kontrolli kaotaks, sest iga sisestuse kinnitab ikkagi inimene.
 
 ## Sisemine teadmine (RAG)
 
-Siin peab vastus põhinema *teie enda* teadmistel, mitte mudeli üldisel mälul. Töötaja küsib: „mitu päeva puhkust mul jäänud on?“, „kuidas läpakat tellida?“ — ja saab vastuse otse ettevõtte juhenditest. Tavamudel neid juhendeid ei tea: ilma nendeta ta arvab. Lahendust, kus süsteem enne vastamist otsib vastused ettevõtte enda dokumentidest, nimetatakse RAG-iks (ingl k *retrieval-augmented generation* — süsteem, mis otsib vastused ettevõtte enda dokumentidest).
+Siin peab vastus põhinema *teie enda* teadmistel, mitte mudeli üldisel mälul. Töötaja küsib: „mitu päeva puhkust mul jäänud on?“, „kuidas läpakat tellida?“ — ja saab vastuse otse ettevõtte juhenditest. Tavamudel neid juhendeid ei tea: ilma nendeta ta arvab. Lahendust, kus süsteem enne vastamist otsib vastused ettevõtte enda dokumentidest, nimetatakse RAG-iks (ingl k *retrieval-augmented generation* — otsinguga täiendatud genereerimine).
 
 **Mida AI teeb.** Otsib süsteemi abil vastused ettevõtte enda juhenditest ja koostab nende põhjal vastuse.
 
 **Mida inimene teeb.** Hoiab juhendid ajakohased ja vastab eranditele.
 
-**Realistlik kasu.** Uued töötajad sisenevad kiiremini, kogenud kolleegide tööd katkestatakse vähem. See on üks väärtuslikumaid kasutusviise — seda käsitletakse põhjalikult 4. tasandi dokumendis „4.2 RAG: oma andmete kasutamine vastuste allikana“ (vt [README index](../README.md)).
+**Realistlik kasu.** Uued töötajad harjuvad kiiremini, kogenud kolleegide tööd katkestatakse vähem. See on üks väärtuslikumaid kasutusviise — seda käsitletakse põhjalikult dokumendis [4.2 RAG](../04-agendid-ja-mootmine/02-rag.md).
 
 ## Tarkvaraarendus
 
@@ -81,7 +81,7 @@ Kuidas hinnata, kas konkreetne ülesanne on üldse automatiseerimist väärt, k�
 
 ## Mida oodata realistlikult
 
-Arvutus on lihtne ja aus: **säästud = ühe tegevuse kestus × korduste arv**. Näide: kliendikirjale vastamine võtab keskmiselt 8 minutit ja kirju tuleb 40 päevas — 5 tundi päevas. Kui kavand lühendab inimese osa kahe minutini, on teoreetiline sääst neli tundi päevas. Reaalsuses süüakse osa säästust ülevaatamise ja parandamisega, aga isegi pooled säästust on päris raha: enam kui kümme töötundi nädalas ühe tööprotsessi juures.
+Arvutus on lihtne ja aus: **säästud = ühe tegevuse kestus × korduste arv**. Näide: kliendikirjale vastamine võtab keskmiselt 8 minutit ja kirju tuleb 40 päevas — 5 tundi 20 minutit päevas. Kui kavand lühendab inimese osa kahe minutini, on teoreetiline sääst neli tundi päevas. Reaalsuses süüakse osa säästust ülevaatamise ja parandamisega, aga isegi pooled säästust on päris raha: umbes kümme töötundi nädalas ühe tööprotsessi juures.
 
 Kolm reaalsuse reeglit:
 
@@ -93,7 +93,7 @@ Kolm reaalsuse reeglit:
 
 ## Näide samm-sammult: tagastustaotluse töötlus
 
-Olukord: e-poes saabub päevas umbes 40 tagastustaotlust. Varem luges klienditeenindaja iga taotluse, kontrollis ostu kuupäeva ja tagastustingimusi ning kirjutas vastuse — keskmiselt 5 minutit, rohkem kui kolm tundi päevas (40 × 5 min = 3 h 20 min, realistlikult pooled).
+Olukord: e-poes saabub päevas umbes 40 kliendikirja, millest suur osa on tagastustaotlused. Varem luges klienditeenindaja iga taotluse, kontrollis ostu kuupäeva ja tagastustingimusi ning kirjutas vastuse — keskmiselt 5 minutit, rohkem kui kolm tundi päevas (40 × 5 min = 3 h 20 min, realistlikult pooled).
 
 Voog käib nii:
 
@@ -102,9 +102,9 @@ Voog käib nii:
 3. **AI koostab vastuskavandi:** ostu andmed võetakse süsteemist kaasa, juhised määravad reeglid (tagastusaeg 14 päeva, tagastuskulu 5 eurot, raha tagasi 3 tööpäeva jooksul) ja mudel kirjutab vastuse.
 4. **Klienditeenindaja kontrollib ja kinnitab:** kas ost vastab tingimustele (nt pole tagastustähtaega ületanud) — kui jah, läheb vastus ühe klõpsuga klienti. Pahased ja erandlikud juhtumid võtab inimene ise üle.
 
-**Kus võib minna valesti.** Mudel võib üle näha, et ost on tagastustähtaja ületanud, ja koostada siiski positiivse vastuse — seepärast näitab süsteem kontrolliks ostu kuupäeva ja reegli täitmise seisundit ning inimene kinnitab enne saatmist. Kui ostu andmeid kaasa ei anta, võib mudel tingimused välja mõelda. Ja kiri, mis puudutab midagi, mida andmetest ei näe (näiteks juriidiline nõue), läheb alati inimesele.
+**Kus võib minna valesti.** Mudel võib jätta märkamata, et ost on tagastustähtaja ületanud, ja koostada siiski positiivse vastuse — seepärast näitab süsteem kontrolliks ostu kuupäeva ja reegli täitmise seisundit ning inimene kinnitab enne saatmist. Kui ostu andmeid kaasa ei anta, võib mudel tingimused välja mõelda. Ja kiri, mis puudutab midagi, mida andmetest ei näe (näiteks juriidiline nõue), läheb alati inimesele.
 
-**Kui palju kokku hoitakse.** Inimese osa langeb 5 minutilt umbes 1–2 minutini. 40 taotlust päevas tähendab teoreetiliselt ca 3 vabastatud tundi päevas; reaalsuses süüakse osa säästust ülevaatamisega, aga isegi pooled — umbes poolteist tundi päevas — on enam kui seitse tundi nädalas.
+**Kui palju kokku hoitakse.** Inimese osa langeb 5 minutilt umbes 1–2 minutini. 40 taotlust päevas tähendab teoreetiliselt kuni ca kolm vabastatud tundi päevas; reaalsuses süüakse osa säästust ülevaatamisega, aga isegi pooled — umbes poolteist tundi päevas — on enam kui seitse tundi nädalas.
 
 > **Lihtsalt öeldes:** parim kontroll on ühe omaenda korduva tekstiülesande kirjapanek: mitu minutit see võtab, mitu korda nädalas juhtub, kes kavandi üle vaataks. Kolm vastust — ja otsus on pooleldi tehtud.
 

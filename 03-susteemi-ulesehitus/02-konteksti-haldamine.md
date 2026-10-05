@@ -54,14 +54,14 @@ Varajane info säilib kokkuvõttes, aga kokkuvõte on alati valik — mudel või
 
 ### 3. „Asjade seis“ — oluliste faktide eraldamine
 
-Süsteem hoiab ajaloo kõrval eraldi kirja olulised faktid — „asjade seis“ (oluliste faktide kirja): kes klient on, mis tellimus, mis eesmärk, mis on otsustatud. Neid fakte ei laske süsteem mudelil kokku võtta ega ajaloo hooleks jätta — need tulevad süsteemi enda andmetest ja lähevad igal päringul kaasa. Ühe päringu kuju:
+Süsteem hoiab ajaloo kõrval olulisi fakte eraldi kirjas — „asjade seis“ (oluliste faktide kiri): kes klient on, mis tellimus, mis eesmärk, mis on otsustatud. Neid fakte ei laske süsteem mudelil kokku võtta ega ajaloo hooleks jätta — need tulevad süsteemi enda andmetest ja lähevad igal päringul kaasa. Ühe päringu kuju:
 
 ```json
 {
   "süsteemivestluse_juhis": "Sa oled e-poe klienditeeninduse assistent. Vasta lühidalt ja eesti keeles.",
   "asjade_seis": {
-    "klient": "Mari Maasikas",
-    "tellimus": "1187",
+    "klient": "Kadri Kask",
+    "tellimus": "1224",
     "toode": "lauvalamp Nordica",
     "soov": "vahetada must tumerohelise vastu"
   },
@@ -104,7 +104,7 @@ Nii jääb oluline info akna algusse ja lõppu, kus tähelepanu kõige tugevam o
 
 ## Näide samm-sammult: klient tuleb järgmisel päeval tagasi
 
-Olukord: e-poe kliendivestlus. Eile käis klient vestluses tellimuse 1187 (lauvalamp Nordica) ümber — 12 käigu jooksul selgus, et klient soovib musta asemel tumerohelist. Öö jooksul vestlus lõppes. Homme avab klient vestlusakna uuesti:
+Olukord: e-poe kliendivestlus. Eile käis klient vestluses tellimuse 1224 (lauvalamp Nordica) ümber — 12 käigu jooksul selgus, et klient soovib musta asemel tumerohelist. Öö jooksul vestlus lõppes. Homme avab klient vestlusakna uuesti:
 
 > „Nagu ma ütlesin, tahaksin ikkagi teist värvi.“
 
@@ -122,11 +122,11 @@ Info on süsteemi andmetes olemas, aga aknasse ei mahtunud — varajane info jä
 
 **c) „Asjade seis“ lahendusega (pärast).** Süsteem hoiab eilse vestluse käigus koostatud faktide kirja (toode, tellimus, soov) ja paneb selle iga päringuga kaasa — ülal näidatud JSON-i kujul. Uus küsimus jõuab mudelini koos kõigi faktidega:
 
-> „Tere jälle! Jätkame sealt, kus jäid: tellimuse 1187 lauvalamp Nordica saame musta asemel tumeroheliseks vahetada, vahetus on tasuta. Kinnitage palun, ja uus lamp läheb kohe teele.“
+> „Tere jälle! Jätkame sealt, kus jäid: tellimuse 1224 lauvalamp Nordica saame musta asemel tumeroheliseks vahetada, vahetus on tasuta. Kinnitage palun, ja uus lamp läheb kohe teele.“
 
 Enne pidi klient kogu eilse info uuesti öeldama; pärast on vastus isikupärane ja õige — faktid tulid süsteemi kirjast, mitte mudeli õnnest.
 
-Pange tähele: variant c ei vajanud pikka ajalugu üldse — kogu „mälu“ on mõnesõnaline faktide kirja, mida süsteem hoiab. Sama kehtib töövoogude kohta: iga töövoo jooks on iseseisev ja tema „mälu“ tuleb andmetest (vt [2.3 Workflow algtasandil](../02-praktika/03-workflow-algtasandil.md)).
+Pange tähele: variant c ei vajanud pikka ajalugu üldse — kogu „mälu“ on mõnesõnaline faktide kiri, mida süsteem hoiab. Sama kehtib töövoogude kohta: iga töövoo jooks on iseseisev ja tema „mälu“ tuleb andmetest (vt [2.3 Workflow algtasandil](../02-praktika/03-workflow-algtasandil.md)).
 
 ## Kokkuvõte
 

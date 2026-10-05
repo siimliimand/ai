@@ -7,7 +7,7 @@
 Pärast seda dokumenti oskad sa:
 
 - selgitada, miks prompt (ingl k *prompt* — mudelile antav juhis) on ettevõtte vara, mitte ühe töötaja märkmed;
-- luua promptipank (ühine korraldatud hoidla) ja kirja panna iga prompti juures kuus põhiandmet;
+- luua promptipank (ühine korraldatud hoidla) ja kirja panna iga prompti juures kuus põhiandmeid;
 - nummerda prompte versioonideks ja kirja panna iga muudatuse juures, mida muudeti, miks ja kes kinnitas;
 - taaskasutada ühte promptimalli mitmes kasutuses, teades, mida tohib muuta ja mida mitte.
 
@@ -31,7 +31,7 @@ Piirjoon: teadmised on ettevõtte varaks alles siis, kui nad on kirjas kohas, ku
 
 > **Lihtsalt öeldes:** promptipank on ettevõtte retseptikogu — mitte iga koka peas, vaid köögiraamatus, mille järele igaüks vaatama saab. Iga retsepti juures märge: kes teeb, millal viimati prooviti, kas kasutusel.
 
-Lihtsaim variant, mis väikesele ettevõttele piisab: **ühine dokument või kaustastruktuur**, kuhu kõigil on ligipääs. Iga prompti juures on pankas kuus põhiandmet:
+Lihtsaim variant, millest väikesele ettevõttele piisab: **ühine dokument või kaustastruktuur**, kuhu kõigil on ligipääs. Iga prompti juures on pankas kuus põhiandmeid:
 
 - **nimi** — nii, et teine inimene aru saab, millega tegu;
 - **eesmärk** — üks lause: mida ta teeb;
@@ -110,7 +110,7 @@ Jaak loob ühe ühise dokumendi ja kõik 12 prompti saavad põhiandmed. Väljav�
 | v2 | 14.08.2026 | Formaadinõue: kokkuvõte tabelina, mitte lõiguna | Testjuhtum T3: klient tahtis ridasid kontrollida | Anu |
 | v3 | 03.10.2026 | Uus reegel: ühel päeval mitu tehingut lähevad kokkuvõttes igaüks eraldi reale, mitte üheks kirjeks | Testjuhtum T7 kukkus läbi: mitme tehinguga päev andis vale kogusumma | Anu |
 
-Väike juhtum, aga täpselt see, mida vara puhul oodata: aastate pärast näeb igaüks, miks kokkuvõte ridade kaupa tehakse ja kes kinnitas. Selguseks: 2.1 testvariandid (A, B, C) on katsetused; versiooninumbri v-number saab pankas ainult heaks kiidetud võitja.
+Väike juhtum, aga täpselt see, mida vara puhul oodata: aastate pärast näeb igaüks, miks kokkuvõte ridade kaupa tehakse ja kes kinnitas. Selguseks: dokumendis 2.1 testitud variandid (A, B, C) on katsetused; versiooninumbri v-number saab pankas ainult heaks kiidetud võitja.
 
 ### Jaak lahkub
 

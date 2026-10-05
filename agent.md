@@ -27,7 +27,7 @@ Dokumendid peavad rahuldama **kahte lugejat korraga**:
 
 **Kirjutamise reeglid:**
 - Kasuta lihtsat, selget keelt; tehnilised mõisted selgita kohe lahti.
-- Kui teema nõuab sügavust, tee vahet: "Mis see on ja miks?" (kõigile) ja "Kuidas täpselt teha?" (tehnilisele lugejale).
+- Kui teema nõuab sügavust, tee vahet: „Mis see on ja miks?“ (kõigile) ja „Kuidas täpselt teha?“ (tehnilisele lugejale).
 - Kasuta näiteid, samm-sammulisi juhiseid ja tabelit/konstruktsioone, mis muudavad teksti loetavaks.
 
 ### Stiilistandardid (kinnitatud)
@@ -42,7 +42,7 @@ Dokumendid peavad rahuldama **kahte lugejat korraga**:
 
 - **`README.md` on projekti index-fail** — sisukord, mis lingib kõikidele teistele markdown-dokumentidele.
 - Iga teema on eraldi markdown-fail; README.md hoida ajakohasena iga uue dokumendi lisamisel.
-- Dokumendid peavad omavahel loogiliselt lingitud olema (nt "eelmine peatükk / järgmine peatükk" või "vaata ka").
+- Dokumendid peavad omavahel loogiliselt lingitud olema (nt „eelmine peatükk / järgmine peatükk“ või „vaata ka“).
 - Failinimed: väiketähed, sidekriipsud (nt `mudelite-valik.md`).
 
 ## 5. Minu tööprotsess igas uues sessioonis
@@ -72,7 +72,7 @@ Kui kasutaja alustab uut vestlust ja annab sisendi, teen alati **esimesena** jä
 ### Paralleelne dokumendikirjutus (kinnitatud protsess)
 
 - **Tempo: alustame katsega 2–3 dokumenti paralleelselt** ühes sessioonis. Kui kooskõla kvaliteet on hea, võib tõsta kuni 5 peale.
-- **Enne paralleelset kirjutamist valmistan mina "briffing-paki"**, mille saab iga kirjutav subagent:
+- **Enne paralleelset kirjutamist valmistan mina „briffing-paki“**, mille saab iga kirjutav subagent:
   1. dokumendi täpne sisuulatus: mis selgitatakse põhjalikult, mis mainitakse vaid lühidalt ja lingitakse edasi (vältimaks kattumist);
   2. ühine terminite nimekiri: kinnitatud eestikeelsed vasted ja selgitused (kõik subagendid kasutavad samu termineid);
   3. stiilistandardid (vt punkt 3 stiilistandardid) ja dokumendimall.

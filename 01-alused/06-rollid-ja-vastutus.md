@@ -17,7 +17,7 @@ Pärast seda dokumenti oskad sa:
 
 ## Viis rolli, viis inimest (või vähem)
 
-Dokument 1.5 jättis ühe küsimuse lahti: iga süsteemi osa eest peab keegi vastutama. Osad ise aga ei otsusta ega seadista — seda teevad inimesed.
+Dokument 1.5 jättis ühe küsimuse lahti: iga süsteemi osa eest peab keegi vastutama. Süsteemi osad ise aga ei otsusta ega seadista — seda teevad inimesed.
 
 ### 1. Tellija või omanik — teab, mis probleemi lahendatakse
 
@@ -37,7 +37,7 @@ Dokument 1.5 jättis ühe küsimuse lahti: iga süsteemi osa eest peab keegi vas
 
 ### 3. Sisukujundaja — kirjutab, mis „hea“ tähendab
 
-**Mida teeb.** Kirjutab prompti (ingl k *prompt* — mudelile antav juhis) ja sõnastab kriteeriumid, mis eristab hea tulemuse keskpärasest. See roll ei nõua tehnikat, vaid asjatundmist: parim sisukujundaja on tihtipeale just valdkonda tundev inimene.
+**Mida teeb.** Kirjutab prompti (ingl k *prompt* — mudelile antav juhis) ja sõnastab kriteeriumid, mis eristavad hea tulemuse keskpärasest. See roll ei nõua tehnikat, vaid asjatundmist: parim sisukujundaja on tihtipeale just valdkonda tundev inimene.
 
 **Milliseid otsuseid teeb.** Mis on „hea tulemus“ selles ettevõttes; millised näited juhiste juurde panna; mis reeglid kehtivad — toon, keel, mida süsteem ei tohi kunagi teha.
 

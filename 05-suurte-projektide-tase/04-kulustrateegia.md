@@ -8,7 +8,7 @@ Pärast seda dokumenti oskad sa:
 
 - selgitada, milles erineb mitme süsteemi kulustrateegia ühe süsteemi eelarvest — ja miks peamine nõue on atribueeritavus (kulude juurde viitavus);
 - sildistada kulud nii, et iga arvel olev euro on seotud kindla süsteemi, kliendi ja keskkonnaga;
-- panna iga süsteemi ja iga keskkonna jaoks eraldi kululagi (ingl k *budget limit* — ette seatud kuumiit, [3.6 põhimõte](../03-susteemi-ulesehitus/06-kulude-haldamine.md));
+- panna iga süsteemi ja iga keskkonna jaoks eraldi kululagi (ingl k *budget limit* — ette seatud kuulimiit, [3.6 põhimõte](../03-susteemi-ulesehitus/06-kulude-haldamine.md));
 - pidada kvartaalset ülevaatust (ingl k *quarterly review* — korrapärane arutelu, mis tasus end ära ja mida lõpetada) koos juhi küsimuste nimekirjaga;
 - langetada kasu/kulu võrdluse põhjal otsus, millal süsteemi optimeerida ja millal lõpetada;
 - kaitsta end agendipõhise süsteemi ootamatu kulutuse eest.
@@ -35,7 +35,7 @@ Eelarvepõhimõtted jäävad samaks, aga korrutatakse süsteemi kaupa:
 - **Keskkondade eraldus.** Arenduse ja testimise kulu on eraldi piiriga, tootmisest eraldatud — nii ei söö katsetamine tootmise eelarvet ega vastupidi. Keskkondade ülesehitus on [5.1 Arhitektuur suures mahus](01-arhitektuur-suures-mahus.md) teema.
 - **Kvartaalne ülevaatus.** Kord kvartalis vaatab juhtkond numbrid üle: mis tasus end ära, mida optimeerida, mida lõpetada. Kuidas, räägime allpool.
 
-> **Lihtsalt öeldes:** ühe süsteemi eelarve on üks kuumiit ja üks teade. Strateegia on nende süsteem: iga süsteem ja iga keskkond oma piiriga, hoiatused sisse ehitatud — ja kalender, mis sunnib kord kvartalis numbreid ausalt üle vaatama.
+> **Lihtsalt öeldes:** ühe süsteemi eelarve on üks kuulimiit ja üks teade. Strateegia on nende süsteem: iga süsteem ja iga keskkond oma piiriga, hoiatused sisse ehitatud — ja kalender, mis sunnib kord kvartalis numbreid ausalt üle vaatama.
 
 ## Kulude sildistamine: iga euro teab, kust ta tuli
 

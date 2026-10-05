@@ -72,7 +72,7 @@ Kaks riski, mida silmas pidada:
 
 ## Näide samm-sammult: Marti kolmas kõne
 
-Olukord: telefoni-tugi „Kõneabi“ (näite järjestamine [2.4](../02-praktika/04-sisendid-ja-andmed.md)-ga). Klient Mart helistab kolmandat korda sama probleemi asjus: internet kaob iga paari päeva tagant.
+Olukord: telefonitugi „Kõneabi“ (näite järjestamine [2.4](../02-praktika/04-sisendid-ja-andmed.md)-ga). Klient Mart helistab kolmandat korda sama probleemi asjus: internet kaob iga paari päeva tagant.
 
 **a) Ilma pikaaegse mäluta (enne).** Süsteemil pole midagi Marti kohta; iga kõne algab nullist:
 

@@ -91,7 +91,7 @@ e-pood ──(„uus kiri“)──► tagastusteenus ──► keskne värav �
                              │
                              └──► kavand ► Piret kinnitab ► saatmine
 Võtmed: väravas | Logid: värava ühislogi | Keskkonnad: arendus / test / tootmine
-Omanik: Tanel
+Süsteemiomanik: Tanel
 ```
 
 Kolm reeglit, mis lehe õigeks teevad:

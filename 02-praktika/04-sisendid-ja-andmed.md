@@ -10,7 +10,7 @@ Pärast seda dokumenti oskad sa:
 - ära tunda viis tüüpilisemat andmete murekohta ja parandada neid enne mudelisse andmist;
 - vormindada andmed ühtsesse struktuuri koos selgete märgenditega;
 - otsustada, kui palju andmeid päringusse panna, ja pidada privaatsuse põhimõttest kinni juba ettevalmistusel;
-- käia terve protsessi läbi näitel: kõnede transkriptsioonid (kõne kirjalik ülestõus) struktuurseks sisendiks.
+- käia terve protsess läbi ühe näite varal: kõnede transkriptsioonid (kõne kirjalik ülestõus) struktuurseks sisendiks.
 
 ## Lihtsalt öeldes
 
@@ -91,7 +91,7 @@ Kui sisendandmed voolavad süsteemi automaatselt — iga kõne ja iga kiri lähe
 
 ## Näide samm-sammult: Kõneabi transkriptsioonid
 
-Olukord: telefoni-tugi „Kõneabi“. Iga öö jooksul jääb 15–30 kliendikõne, mida töötaja hommikul läbi kuulata ei jõua. Süsteem teeb kõnedest transkriptsiooni, aga tekstid on nii koledad, et otse mudelile andes on vastused juhuslikud.
+Olukord: telefonitugi „Kõneabi“. Iga öö jooksul jääb 15–30 kliendikõne, mida töötaja hommikul läbi kuulata ei jõua. Süsteem teeb kõnedest transkriptsiooni, aga tekstid on nii koledad, et otse mudelile andes on vastused juhuslikud.
 
 **1. samm — algne kaos.** Üks päris transkriptsioon:
 
@@ -131,7 +131,7 @@ Kuupäevad ühtlustatud: „esmaspäev“ → 2026-09-28 (tellimuse andmetest). 
 [ÜLESANNE] Koosta kliendile vastuse mustand kuni 80 sõna, eesti keeles.
 ```
 
-**5. samm — tulemus.** Otse räpasel transkriptsioonil põhinevad vastused olid juhuslikud: kord pakkus mudel toote ära, kord kirjutas nime valesti, kord arvas kuupäeva. Puhastatud ja struktureeritud sisendiga tulevad kõik faktid andmetest, mitte äraarvamisest — vastused on usaldusväärsemad ja korduvad. Kuna sammud on igal hommikul samad, saab selle jada süsteemis iseseisvalt käima panna; kuidas see workflow-na üles ehitada, õpetab [2.3](03-workflow-algtasandil.md).
+**5. samm — tulemus.** Otse toorel transkriptsioonil põhinevad vastused olid juhuslikud: kord pakkus mudel toote ära, kord kirjutas nime valesti, kord arvas kuupäeva. Puhastatud ja struktureeritud sisendiga tulevad kõik faktid andmetest, mitte äraarvamisest — vastused on usaldusväärsemad ja korduvad. Kuna sammud on igal hommikul samad, saab selle jada süsteemis iseseisvalt käima panna; kuidas see workflow-na üles ehitada, õpetab [2.3](03-workflow-algtasandil.md).
 
 ## Kokkuvõte
 

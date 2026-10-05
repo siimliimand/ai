@@ -7,10 +7,10 @@
 Pärast seda dokumenti oskad sa:
 
 - selgitada, kust AI-kasutuse hind tuleb — sisendist, väljundist ja vestluse ajaloo kasvust;
-- teha enne käikuandmist lihtsa kulude hinnang (ingl k *estimate* — kuluprognoos enne käikuandmist) ühe valemiga;
+- teha enne käikuandmist lihtne kulude hinnang (ingl k *estimate* — kuluprognoos enne käikuandmist) ühe valemiga;
 - leida pakkuja juhtpaneelilt (ingl k *dashboard* — pakkujate veebiportaal, kus tegelik kasutus ja kulud on nähtavad) reaalsed numbrid;
 - nimetada viis praktikat, millega kulut langetada ilma kvaliteeti ohverdamata;
-- seada hoiatuskünnis (ingl k *alert threshold* — kulu piir, mille ületamisest tuleb teade) ja kululagi (ingl k *budget limit* — ette seatud kuumiit).
+- seada hoiatuskünnis (ingl k *alert threshold* — kulu piir, mille ületamisest tuleb teade) ja kululagi (ingl k *budget limit* — ette seatud kuulimiit).
 
 ## Lihtsalt öeldes
 
@@ -56,7 +56,7 @@ Läbiarvatud näide:
   Kuu (22 tööpäeva):                   ≈ 2 €
 ```
 
-Hinnang käib siin ainult päevakokkuvõtete kohta; arvete sisestuskavandite vooga korrutame sama valemi oma numbritega.
+Hinnang käib siin ainult päevakokkuvõtete kohta; arvete sisestuskavandite voos korrutame sama valemi oma numbritega.
 
 Kaks ausat märkust. **Esiteks: hinnad on näitlikud ja muutuvad.** „0,002 € iga tuhande sisendtokeni eest“ on õpetuslik näitarv — reaalsed hinnad leiad pakkujate hinnakirjadest, need sõltuvad mudelist (suur kallim, väike odavam) ja muutuvad aja jooksul. **Teiseks: ümarda julgelt — eesmärk on suurusjärg, mitte sent.** Keskmine tokenite arv päringu kohta selgub ühest proovikäigust või juhtpaneelilt; sellele suurusjärgule toetub ka tellija otsus (vt [1.6 Rollid ja vastutus projektis](../01-alused/06-rollid-ja-vastutus.md)).
 
@@ -98,7 +98,7 @@ Mõistlik kooskõla: kululagi umbes kaks korda suurem kui hinnang (jätab ruumi 
 
 Jällegi **„Nummerbüroo“** (vt [1.6](../01-alused/06-rollid-ja-vastutus.md)): omanik Anu, haldaja Jaak. Süsteem koostab arvetest sisestuse kavandeid ja lisaks igal päeval 12 kliendile päevakokkuvõtte nende arvetoimingutest. Anu küsib Jaagilt: „Mis see AI meile maksma läheb?“
 
-**1. Hinnang paberil.** Jaak teeb ülaltoodud arvutuse ja jõuab **~2 € kuuni**. „Paar eurot kuus,“ ütleb Jaak. Anu rahul.
+**1. Hinnang paberil.** Jaak teeb ülaltoodud arvutuse päevakokkuvõtete osas ja korrutab sama valemi kavandite vooga — kokku jõuab **~4 € kuuni** (neist ~2 € päevakokkuvõtted). „Paar eurot kuus,“ ütleb Jaak. Anu rahul.
 
 **2. Esimene nädal juhtpaneelil.** Nädal hiljem näitab Jaak Anule pakkuja juhtpaneeli möödunud nädala andmeid:
 

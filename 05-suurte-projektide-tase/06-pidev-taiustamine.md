@@ -117,7 +117,7 @@ Sama oluline on see, mida Kõneabi **ei** teinud: malli lühendus jäi tegemata 
 - **Mõõtmine ei paranda — parandab otsus:** mõõdik on teade, muudatus sünnib otsusest „mis me muudame ja mida ootame“.
 - **Tsükkel on viieetapiline:** andmed → analüüs → otsuse loend → üks muudatus (regressioonitestiga) → kontroll kuu hiljem.
 - **Iga otsuse loendi rida peab kandma numbrilist oodatavat mõju** — muidu ei saa kuu hiljem öelda, kas see õnnestus.
-- **Mõju × vaevus prioriteerib:** suur mõju ja väike vaevus kohe, suur mõju ja suur vaevus planeeri, väike mõju — ära tee.
+- **Mõju × vaevus prioriteerib:** suur mõju ja väike vaevus kohe, suur mõju ja suur vaevus planeeri, väike mõju ja suur vaevus — ära tee.
 - **Parim allikas on inimese sekkumiste loend:** iga käsitsi parandatud vastus on konkreetne õpetus, mida mujalt osta ei saa.
 - **Väike regulaarne laseb suure maha:** kaks tundi kuus hoiab muudatused väikesteks ja pööratavateks — ja hõlmab ka julgust lõpetada ([5.4](04-kulustrateegia.md)).
 

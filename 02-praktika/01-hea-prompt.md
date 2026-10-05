@@ -6,7 +6,7 @@
 
 Pärast seda dokumenti oskad sa:
 
-- panna korralikult kirjutatud prompti (ingl k *prompt* — mudelile antav juhis) aluse korduvkasutatavale promptimallile (korduvkasutatav juhiste raam — kinnised osad + kohatäited);
+- panna korralikult kirjutatud prompt (ingl k *prompt* — mudelile antav juhis) aluseks korduvkasutatavale promptimallile (korduvkasutatav juhiste raam — kinnised osad + kohatäited);
 - eristada malli kinniseid osi muutuvatest ja kirjutada kohatäited selgelt [NIMI_SUURTÄHTEDEGA];
 - viia prompt läbi testimise tsükli: testjuhtumid, variantide kõrvutustabel ja aktsepteerimiskriteeriumid;
 - juhtida rolli sõnastusega vastuse tooni ja sügavust ning nõuda ühtset väljundit iga kord.
@@ -169,7 +169,7 @@ Kontroll jääb: iga kokkuvõtte vaatab raamatupidaja enne tegevust üle — mal
 ## Mis edasi?
 
 - eelmine → [1.6 Rollid ja vastutus projektis](../01-alused/06-rollid-ja-vastutus.md)
-- järgmine → [2.2 Struktureeritud väljund: tabelid, mallid ja JSON](02-struktureeritud-valjund.md)
+- järgmine → [2.2 Struktureeritud väljund: loendid, tabelid ja JSON](02-struktureeritud-valjund.md)
 - Kus prompte hoida ja versioonida → [2.6 Promptide haldus kui vara](06-promptide-haldus.md)
 - Mitmeosalised protsessid, kus mall on üks samm → [2.3 Workflow algtasandil: sammud ja tingimused](03-workflow-algtasandil.md)
 - tagasi → [README index](../README.md)

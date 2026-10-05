@@ -8,7 +8,7 @@ Pärast seda dokumenti oskad sa:
 
 - selgitada, miks „tundub hea“ pole otsustamise alus ja mis on hindamine (ingl k *evaluation* — süsteemi kvaliteedi plaanitud mõõtmine arvudega);
 - ehitada testikomplekt (ingl k *test set* — ettevalitud sisendite kogu, mida iga muudatuse järel läbi jooksetatakse) ja kuldstandard (ingl k *golden set* — inimese kinnitatud õiged vastused);
-- lugeda kuut põhimõõdikut — alates täpsusest (ingl k *accuracy* — mitu % vastustest õige) kuni inimese sekkumise määradeni (mitu % juhtumitest läks inimesele);
+- lugeda kuut põhimõõdikut — alates täpsusest (ingl k *accuracy* — mitu % vastustest õige) kuni inimese sekkumise määraga lõpuni (mitu % juhtumitest läks inimesele);
 - tabada regressioon (ingl k *regression* — varem töötanu läbikukkumine) enne, kui muudatus jõuab klientideni;
 - öelda, kes ja millal hindab: automaat, inimese näidisvalik ja kolm kindlat hetke.
 

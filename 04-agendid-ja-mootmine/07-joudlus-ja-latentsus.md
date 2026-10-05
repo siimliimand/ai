@@ -9,7 +9,7 @@ Pärast seda dokumenti oskad sa:
 - selgitada, mis on latentsus (ingl k *latency* — ooteaeg päringust vastuseni) ja millal kiirus oluline on;
 - nimetada viis põhjust, mis vastust aeglustavad, ja viis võimalust neid leevendada;
 - hinnata iga kiirendusvahendi tegelikku hinda — seda, mille arvel kiirus osteti;
-- mõõta latentsust nii keskmisena kui ka halvima juhtumina (ingl k *p95* — 95% juhtudest kiirem kui see);
+- mõõta latentsust nii keskmisena kui ka 95% piirina (ingl k *p95* — 95% juhtudest kiirem kui see);
 - käia iga kiirendusmuudatus läbi hindamisega (vt [4.5](05-hindamine.md)), et kvaliteet ei kukuks.
 
 ## Lihtsalt öeldes
@@ -34,7 +34,7 @@ Reegel on lihtne: **mida otsesemalt inimene vastust ootab, seda lühem peab late
 Latentsust jälgitakse kahe mõõdikuga (ingl k *metric*):
 
 - **Keskmine** ütleb, kui kiire on tüüpiline päring — aga varjab äärmusi: üksik 30-sekundiline juhtum kaob keskmises nähtamatuks.
-- **Halvim juhtum (p95)** ütleb, kui halb on halvima õnnega kasutaja kogemus: p95 20 s tähendab, et iga kahekümnes klient ootab 20 sekundit või kauem — seda keskmine näidata ei oska.
+- **95% piir** ütleb, kui halb on halvima õnnega kasutaja kogemus: 95% piir 20 s tähendab, et iga kahekümnes klient ootab 20 sekundit või kauem — seda keskmine näidata ei oska.
 
 ## Mis vastust aeglustab
 
@@ -84,7 +84,7 @@ Pärast käikuandmist jälgib numbreid tootmises monitooring ([4.6](06-monitoori
 
 ## Näide samm-sammult: Kõneabi vestlusbot
 
-Sama telefoni-tugi Kõneabi, kus [2.4](../02-praktika/04-sisendid-ja-andmed.md) puhastas transkriptsioone ja [4.3](03-pikaaegne-malu.md) ehitas kliendiprofiili, lisas saidile vestlusboti: klient kirjutab küsimuse, süsteem paneb päringusse suure mudeli ja kogu vestlusajaloo ([3.2](../03-susteemi-ulesehitus/02-konteksti-haldamine.md) põhimõttel), mudel vastab. Vastuseks kulus **8–12 sekundit** — kliendid sulgesid akna enne vastust.
+Sama telefonitugi Kõneabi, kus [2.4](../02-praktika/04-sisendid-ja-andmed.md) puhastas transkriptsioone ja [4.3](03-pikaaegne-malu.md) ehitas kliendiprofiili, lisas saidile vestlusboti: klient kirjutab küsimuse, süsteem paneb päringusse suure mudeli ja kogu vestlusajaloo ([3.2](../03-susteemi-ulesehitus/02-konteksti-haldamine.md) põhimõttel), mudel vastab. Vastuseks kulus **8–12 sekundit** — kliendid sulgesid akna enne vastust.
 
 **1. samm — mõõtmine.** Üks nädal andmeid: keskmine latentsus **9,5 s**, halvim juhtum (p95) **~20 s** — iga kahekümnes klient ootas vähemalt 20 sekundit. Enamik ajast läks pika sisendi (~4 000 tokenit ajalugu igal päringul) läbilugemisele ja pika vastuse kirjutamisele suure mudeliga. Numbrid paberil enne, muudatused pärast.
 
@@ -99,7 +99,7 @@ Sama telefoni-tugi Kõneabi, kus [2.4](../02-praktika/04-sisendid-ja-andmed.md) 
 | Mõõdik | Enne | Pärast |
 |---|---|---|
 | Keskmine latentsus | 9,5 s | 2,8 s |
-| Halvim juhtum (p95) | ~20 s | ~5 s |
+| 95% piir | ~20 s | ~5 s |
 | Esimesed sõnad kliendile | 9,5 s (kogu vastus korraga) | ~1 s |
 | Kulu päevas | baas | −35% |
 | Kvaliteet (testikomplekt, 4.5) | baas | ei kukkunud |

@@ -25,7 +25,7 @@ Mudel oskab keelt ja teeb järeldusi tekstist, aga tal pole silmi sinu andmetess
 2. **Mudel otsustab, kas ja millal kutsuda.** Iga kasutaja päringu (ingl k *request*) korral loeb mudel nii küsimust kui ka kõigi olemasolevate tööriistade kirjeldusi ja otsustab: kas selleks, et vastata, tuleb tööriista kasutada, millist ja mis andmetega.
 3. **Kutsumus tuleb sinu süsteemile, mitte mudelile.** Mudel ei soorita tegevust ise — ta annab vastuse struktureeritud väljundina (ennustatavas vormis vastus, vt [2.2](../02-praktika/02-struktureeritud-valjund.md)): „kutsu tööriist nimega X andmetega Y“. Seda kutsumust loeb sinu süsteem (sinu programm, mis tegevuse sooritab), paneb tegeliku tegevuse käima — otsib andmebaasist, arvutab, saadab — ja annab tulemuse mudelile tagasi. Alles siis sõnastab mudel inimesele loetava vastuse.
 
-Kolmas punkt on turvalisuse seisukohalt kriitiline: **mudel ei tee midagi iseseisvalt — süsteem teeb.** Mudel võib ainult soovitada; iga ukse avamise ja iga andmete otsimise sooritab programm, mis käitub ainult nii, nagu sina oled lubanud. Kuidas seda püsti panna, on API (programmiliides) teema ([3.1](01-api-integratsioonid.md)); mis juhtub, kui süsteemi osa ebaõnnestub, vaatab [3.4 Vead ja veakäsitlus](04-vead-ja-veakasitlus.md).
+Kolmas punkt on turvalisuse seisukohalt kriitiline: **mudel ei tee midagi iseseisvalt — süsteem teeb.** Mudel võib ainult soovitada; iga ukse avamise ja iga andmete otsimise sooritab programm, mis käitub ainult nii, nagu sina oled lubanud. Kuidas seda püsti panna, on [3.1 API integratsioonide](01-api-integratsioonid.md) teema; mis juhtub, kui süsteemi osa ebaõnnestub, vaatab [3.4 Vead ja veakäsitlus](04-vead-ja-veakasitlus.md).
 
 ## Kuidas tööriista kirjeldada
 

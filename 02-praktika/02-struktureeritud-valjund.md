@@ -1,4 +1,4 @@
-# 2.2 Struktureeritud väljund: tabelid, mallid ja JSON
+# 2.2 Struktureeritud väljund: loendid, tabelid ja JSON
 
 > **Sihtpublik:** kõik | **Eeltingimused:** [2.1 Head promptini](01-hea-prompt.md)
 
@@ -19,9 +19,9 @@ Pärast seda dokumenti oskad sa:
 
 Dokumendist [1.5](../01-alused/05-susteemi-anatoomia.md) tead, et AI-süsteemis on väljund sageli mõne teise osa sisend. Inimene jaksab lause seest hinna üles otsida; programm ei jaksa — tal peab iga info koht paigas olema. Kolm probleemi, mis vabatekstilisel vastusel süsteemis peaaegu alati tekivad:
 
-1. **Info on maetud lausesse.** „Karlova korter südalinna lähedal, 58 m², hind 149 000 €, kohe müüa“ — kõik on olemas, aga iga väärtus peidus teistsuguses kohas. Programm, kes peaks hinnast ruutmeetrihinna arvutama, ei teada, kumb arv on hind ja kumb pindala.
+1. **Info on maetud lausesse.** „Karlova korter südalinna lähedal, 58 m², hind 149 000 €, kohe müüa“ — kõik on olemas, aga iga väärtus peidus teistsuguses kohas. Programm, mis peaks hinnast ruutmeetrihinna arvutama, ei tea, kumb arv on hind ja kumb pindala.
 2. **Iga kord teistsugune sõnastus.** Ühel päeval kirjutab mudel „kolm tuba“, järgmisel „2 tuba ja köök“, kolmandal „3-toaline“. Inimene mõistab kõiki kolme; tabelisse aga vajab süsteem sama kujuga väärtust, muidu veerud pole võrreldavad.
-3. **Tellimata lisad.** Küsid JSON-i ja mudel vastab hea tahtmisega: „Muidugi! Siin on soovitud andmed:“ — ja alles siis tulevad ise andmed. Inimene naeratab; programm, kes JSON-i ootas, saab teksti, mis tema reeglite järgi vale on.
+3. **Tellimata lisad.** Küsid JSON-i ja mudel vastab hea tahtmisega: „Muidugi! Siin on soovitud andmed:“ — ja alles siis tulevad ise andmed. Inimene naeratab; programm, mis JSON-i ootas, saab teksti, mis tema reeglite järgi vale on.
 
 > **Lihtsalt öeldes:** vabatekst on inimese keel — me loeme ja mõistame. Süsteem vajab kohta-kirja: iga väli nimega ja oma kindlal kohal, iga kord ühtmoodi.
 
@@ -51,7 +51,7 @@ JSON (struktureeritud andmevorming — võti-väärtus paarid) näeb esmapilgul 
 }
 ```
 
-Loe seda nagu tabeli ühte rida: vasakul veeru pealkiri, paremal väärtus. Loogsulud `{` ja `}` hoiavad read kokku üheks tervikuks — üheks kirjeks (näiteks üks korter). Kui kirjeid on mitu, pannakse nad nurksulude `[` ja `]` vahele nimekirja. Sulud kannavad struktuuri: isegi kui sina JSON-i programmeerida ei oska, teab iga tabeli- või arvutusprogramm, et „hind_eur“ on alati samal kohal ja tähendab sama. Sellepärast on JSON masinale edastamise vormiks — süsteemi piiri ületava väljundi tehnilist poolt selgitab [3.1](../03-susteemi-ulesehitus/01-api-integratsioonid.md).
+Loe seda nagu tabeli ühte rida: vasakul veeru pealkiri, paremal väärtus. Loogsulud `{` ja `}` hoiavad read kokku üheks tervikuks — üheks kirjeks (näiteks üks korter). Kui kirjeid on mitu, pannakse nad nurksulude `[` ja `]` vahele nimekirja. Sulud kannavad struktuuri: isegi kui sina JSON-i programmeerida ei oska, teab iga tabeli- või arvutusprogramm, et „hind_eur“ on alati samal kohal ja tähendab sama. Sellepärast on JSON masinale edastamise vormiks — süsteemi piiri ületava väljundi tehnilise poole selgitab [3.1](../03-susteemi-ulesehitus/01-api-integratsioonid.md).
 
 > **Lihtsalt öeldes:** JSON on nagu vorm, mille veerud on sõnadega üles kirjutatud. Võti on veeru pealkiri, väärtus on ruutu kirjutatud vastus, sulud hoiavad read ühe kirje kokku.
 
@@ -74,7 +74,7 @@ Isegi korraliku promptiga juhtub: üks kirje kolmekümnest jääb pooleli või m
 
 1. **Kordusreegel.** Kõige sagedasem põhjus on, et formaadinõue seisab prompti keskel ja läheb tähelepanu alt ära (vt 1.3 kolmandat sagedamat viga). Pane nõue algusesse ja korda kriitilist osa lõpus: „Meenutus: ainult JSON, ilma muu tekstita.“
 2. **Tugevda näidet.** Kui mudel ikka lisab sissejuhatusi, näita näites ära ka kontrast: „mitte nii: „Siin on andmed! { … }“, vaid täpselt nii: { … }“. Hea ja halva näide kõrvuti õpetab kiiremini kui järelepaldumine.
-3. **Kontroll automaatse reegliga.** Kui vastust töötleb programm, lase programmil enne kasutamist lihtne reegel üle kontrollida: kas vastus on üldse JSON ja kas kõik vajalikud väljad on olemas? Kui ei — küsi mudelilt parandust või saada kirje inimesele. Kuidas selline kontroll ja parandussükkel suuremas süsteemis üles ehitada, selgitab [3.4 Vead ja veakäsitlus](../03-susteemi-ulesehitus/04-vead-ja-veakasitlus.md).
+3. **Kontroll automaatse reegliga.** Kui vastust töötleb programm, lase programmil enne kasutamist lihtsat reeglit üle kontrollida: kas vastus on üldse JSON ja kas kõik vajalikud väljad on olemas? Kui ei — küsi mudelilt parandust või saada kirje inimesele. Kuidas selline kontroll ja parandussükkel suuremas süsteemis üles ehitada, selgitab [3.4 Vead ja veakäsitlus](../03-susteemi-ulesehitus/04-vead-ja-veakasitlus.md).
 
 Kuni süsteem pole oma töökindlust tõestanud, jääb lõplik heakskiit inimesele — nii hoiame inimese kinnitusahelas (ingl k *human-in-the-loop*): masin teeb, inimene kiidab heaks.
 

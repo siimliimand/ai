@@ -20,8 +20,8 @@ Pärast seda dokumenti oskad sa:
 
 Dokument [4.1](01-agendi-susteemid.md) andis agendi põhitõed: kolm osa, agent vs workflow, hübriid. Aga mis siis, kui isegi üks agent hea juhisega üksi ei saa hakkama? Kolm märki:
 
-1. **Ülesande osad vajavad erinevat spetsialiseerumist.** Kui üks osa tööst nõuab teistsugust juhist, teistsuguseid tööriistu või isegi teistsugust mudelit, ei saa ühe agendi juhis mõlemat hästi öelda. Analüütiku juhis ütleb „ole lühike ja täpne“, kirjaniku juhis „hoia lugu voolavana“ — ühes juhises need üksteist ära juhivad.
-2. **Tulemus vajab sõltumatut kontrolli — kirjutaja ei ole kontrollija.** Kes on teksti kirjutanud, on oma teksti paha kriitik — loeb seda, mida tahtis öelda. Sama kehtib agendi kohta. Eraldi kontrollagent (teine agent, kes tulemust üle vaatab) näeb tulemust värske pilguga ja käib oma nimekirja järgi — mitte kirjutaja eneserahuldamise järgi.
+1. **Ülesande osad vajavad erinevat spetsialiseerumist.** Kui üks osa tööst nõuab teistsugust juhist, teistsuguseid tööriistu või isegi teistsugust mudelit, ei saa ühe agendi juhis mõlemat hästi öelda. Analüütiku juhis ütleb „ole lühike ja täpne“, kirjaniku juhis „hoia lugu voolavana“ — ühes juhises need üksteist ära segavad.
+2. **Tulemus vajab sõltumatut kontrolli — kirjutaja ei ole kontrollija.** Kes on teksti kirjutanud, on oma teksti paha kriitik — loeb seda, mida tahtis öelda. Sama kehtib agendi kohta. Eraldi kontrollagent näeb tulemust värske pilguga ja käib oma nimekirja järgi — mitte kirjutaja eneserahuldamise järgi.
 3. **Töö on loomulikult jaotunud.** Viis postitust on viis sõltumatut tükki: need saab teha eraldi, vajadusel paralleelselt, ja igaüht eraldi kontrollida. Siin pole üks hiigelülesanne, vaid hunnik väikeseid ülesandeid.
 
 Üks kontrollküsimus enne otsust: kas osad vajavad erinevat **juhist** või lihtsalt erinevat **sisendit**? Kui sama agent saab sama juhisega teha viis korda viis erinevat sisendit, pole vaja viit agenti — piisab ühest agendist viie kutsega.
@@ -63,7 +63,7 @@ iga agent teeb oma osa ja annab tulemuse edasi
 
 Orkestratsioon (ingl k *orchestration* — agentide töö jagamine, suunamine ja tulemuste kokkuvõtmine) on juhi töö. Esimene küsimus pole „kuidas agendid ühendada“, vaid „kes juhib“.
 
-Kiusatus on ehitada juhtagent (ingl k *orchestrator* — agent, kes jagab tööd ja kogub tulemusi): lase ühel agendil otsustada, kes mida teeb. Aga siis on juhi positsioonis jälle mudel — tema otsused on etteaimamatud ja tema vead kanduvad kõigile allapoole. Siin töötab [2.3 põhimõte](../02-praktika/03-workflow-algtasandil.md): **tihti juhib agente lihtne workflow**. Workflow orkestraatorina on:
+Kiusatus on ehitada juhtagent: lase ühel agendil otsustada, kes mida teeb. Aga siis on juhi positsioonis jälle mudel — tema otsused on etteaimamatud ja tema vead kanduvad kõigile allapoole. Siin töötab [2.3 põhimõte](../02-praktika/03-workflow-algtasandil.md): **tihti juhib agente lihtne workflow**. Workflow orkestraatorina on:
 
 - **etteaimatav** — samad sammud iga kord; kui viga tuleb, tead, kus otsida;
 - **odav** — juhtimine ise maksab null tokenit;
@@ -73,6 +73,8 @@ Juhtagent on põhjendatud ainult siis, kui töö jaotus ise nõuab mõtlemist �
 
 ## Kulud, riskid ja piirid korrutuvad
 
+> **Lihtsalt öeldes:** üks agent on üks tasuline assistent; kaks agenti on kaks assistenti, kes peavad omavahel kokku leppima — kulud ja eksimisvõimalused kasvavad kiiremini kui kasu.
+
 Mitme agendi süsteemis korrutub kõik — ka hea, aga eelkõige halb:
 
 - **Kulud korrutuvad.** Igal agendil on oma päringud: oma juhis, oma tööriistakutsed, oma mõtlemistokenid. Kolm agenti pole kolm korda ühe agendi hind — see on kolm korda kõike, pluss info liikumine nende vahel ([3.6 Kulude haldamine](../03-susteemi-ulesehitus/06-kulude-haldamine.md)). Kontrollija tsükkel „paranda ja proovi uuesti“ on kalleim osa, kui talle kordade piiri ei pane.
@@ -80,7 +82,7 @@ Mitme agendi süsteemis korrutub kõik — ka hea, aga eelkõige halb:
 - **Selgus kadub.** Ühe agendi süsteemis on viga juhises, sisendis või mudeli vastuses. Viie agendi süsteemis on viis juhist, viis sisendit ja nende vahelised ülekanded — kui lõpptulemus halb, on oluliselt raskem öelda, **kus** viga juhtus.
 - **Testimine keeruliseks.** Ühe agendi test on „sisend sisse, väljund välja“. Mitme agendi süsteemi test vajab kombinatsioone: mis juhtub, kui üks agent annab ootamatu väljundi, ja kuidas käitub järgmine? Kuidas seda kõike mõõta, vaatab [4.5 Hindamine](05-hindamine.md).
 - **Piirid igale agendile eraldi.** Kaitsekiht (ingl k *safeguard* — piirang, mis on süsteemi disaini sisse ehitatud) kehtib igale agendile eraldi, mitte süsteemile korraga: teemade leidjal ainult lugemisõigus, koostajal pole avaldamisvõimalust, kontrollagendil pole saatmisõigust. Kui ühel agendil on kõik õigused, on kõik teised piirid ainult sõnad ([3.5 Ohutus](../03-susteemi-ulesehitus/05-ohutus.md)).
-- **Inimene kinnitusahelas (ingl k *human-in-the-loop* — töövoog, kus inimene kinnitab tulemuse enne kasutust) jääb lõppotsustel.** Viis agenti, kes on nõus, ei ole viis allkirja: agentide konsensus pole inimese kinnitus. Kliendini minev, rahaga ja avalikkusega seotu läbib alati inimese.
+- **Inimene kinnitusahelas jääb lõppotsustel.** Viis agenti, kes on nõus, ei ole viis allkirja: agentide konsensus pole inimese kinnitus. Kliendini minev, rahaga ja avalikkusega seotu läbib alati inimese.
 
 ## Näide samm-sammult: Sõnarohu nädalasisu
 
@@ -114,7 +116,7 @@ Kontrollagendi kontroll-loend:
 | Stiil | stiilijuhendi hääl, pikkus ja sõnavara | müügiline toon, kus juhend nõuab nõustavat |
 | Keelatud väited | lubadused, mida klient ei tohi teha | „garanteerime tulemuse 30 päevaga“ |
 
-**Mis juhtus ilma kontrollijata.** Enne kontrollagendi lisamist käis ahel otse: teemad → tekstid → inimene kinnitab. Reedel kinnitas inimene viis teksti korraga, ühe pilguga — ja üks postitus läks välja hinnaga „29 €“, mida kliendi hinnakirjas pole: koostaja oli täitnud teabeauku usutava numbriga. Kliendi jälgijad hakkasid „soodushinnale“ viitama ja Sõnarohu usaldus värises. Kanduv viga sünnib ühes agendis, aga maksab kõigi järgmiste sammude pealt — kontrollagent oleks hinna hinnakirjaga võrrelnud juba neljapäeval, mitte klient alles reedel.
+**Mis juhtus ilma kontrollijata.** Enne kontrollagendi lisamist käis ahel otse: teemad → tekstid → inimene kinnitab. Reedel kinnitas inimene viis teksti korraga, ühe pilguga — ja üks postitus läks välja hinnaga „29 €“, mida kliendi hinnakirjas pole: koostaja oli täitnud teabeaugu. Kliendi jälgijad hakkasid „soodushinnale“ viitama ja Sõnarohu usaldus värises. Kanduv viga sünnib ühes agendis, aga maksab kõigi järgmiste sammude pealt — kontrollagent oleks hinna hinnakirjaga võrrelnud juba neljapäeval, mitte klient alles reedel.
 
 Täna ei liigu workflow neljapäeval edasi, enne kui kontroll-loend on täis — ja reedel jääb viimane sõna inimesele: agent ei avalda kunagi ise midagi.
 

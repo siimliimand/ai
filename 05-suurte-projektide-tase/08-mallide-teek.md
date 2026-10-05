@@ -46,7 +46,7 @@ Prompt tootmises pole fail, mida korrigeeritakse käigu pealt — muudatus on t�
 
 Kord kuus — 30 minutit tabeli täitmiseks; kogu tsükkel koos aruteluga 1–2 tundi, kus monitooringu numbrid muutuvad otsusteks (rutiinist [4.6](../04-agendid-ja-mootmine/06-monitooring.md), tsüklist [5.6](06-pidev-taiustamine.md)). Täida tabel:
 
-| Näitaja | Eelmine kuu | See kuu | Märkus |
+| Mõõdik | Eelmine kuu | See kuu | Märkus |
 |---|---|---|---|
 | maht (päringud päevas) | | | |
 | veamäär | | | |
@@ -57,7 +57,7 @@ Kord kuus — 30 minutit tabeli täitmiseks; kogu tsükkel koos aruteluga 1–2 
 
 Mõõdikute selgitused ja hoiatusmärgid leiab [4.6 Monitooring](../04-agendid-ja-mootmine/06-monitooring.md). Seejärel kolm küsimust:
 
-1. **Millised näitajad liikusid ja miks?** Järsk muutus ilma põhjuseta on uurimise väärt — ka siis, kui see on heas suunas.
+1. **Millised mõõdikud liikusid ja miks?** Järsk muutus ilma põhjuseta on uurimise väärt — ka siis, kui see on heas suunas.
 2. **Mis läks inimesele ja miks?** Korduv eksimus on juhise viga, mitte halb õnn → [4.6 Monitooring](../04-agendid-ja-mootmine/06-monitooring.md).
 3. **Mida teen sellega kuu jooksul?** Iga tabatud viga läheb testikomplekti ([4.5](../04-agendid-ja-mootmine/05-hindamine.md)), iga uus kirjatüüp näidena prompti juurde ([2.6](../02-praktika/06-promptide-haldus.md)) — nii käib mõõtmine otsuste, mitte pelga numbrite kogumise üle ([5.6](06-pidev-taiustamine.md)).
 
@@ -76,17 +76,17 @@ Kuus sammu lühidalt ([5.5 Mudelite vahetamine](05-mudelite-vahetamine.md) — k
 
 ## Mall: promptipanga kirje
 
-Iga prompti juures pankas kuus põhiandmet + viide testimisele ([2.6](../02-praktika/06-promptide-haldus.md) mall on kuueosaline, teek lisab testimise viite); täida:
+Iga prompti juures on pankas kuus põhiandmeid + viide testimisele ([2.6](../02-praktika/06-promptide-haldus.md) mall on kuueosaline, teek lisab testimise viite); täida:
 
 ```text
 PROMPTIPANGA KIRJE
 ------------------
 Nimi:              klientkiri-klassifitseerija
-Eesmärk:           Sorteerib kliendikirjad liikide kaupa: tagastus, info, muu (vt 2.5 ja 4.5)
+Eesmärk:           Sorteerib kliendikirjad 8 liiki (tagastus, info, kaebus, …) (vt 2.5 ja 4.5)
 Kasutaja:          e-poo klienditoe workflow (samm 1), igapäev
 Viimati testitud:  2026-10-01 — kuldstandard 40/40
 Olek:              kasutusel  (teised väärtused: testimisel | arhiivis)
-Versioon:          v3 (2026-09-28 — lisatud näited kampaaniatellimuse kohta)
+Versioon:          v3 (2026-09-28 — lisatud näited liigi „kaebus“ juurde)
 Viide testimisele: 4.5 testikomplekt, tabel „klassifitseerija v3 tulemused“
 ```
 
@@ -117,7 +117,7 @@ RISKIREGISTER
 | Prompt injection läbi kasutaja sisendi  | madal     | kõrge    | omanik     |
 ```
 
-Reegel mõlemale: iga rea juures üks nimi, mitte komisjon — muidu vastutus jääb vaikimisi kellelegi ([5.7](07-vastutus-ja-eetika.md)).
+Reegel mõlemale: iga rea juures üks nimi, mitte komisjon — muidu vastutus jääb vaikimisi mitte kellelegi ([5.7](07-vastutus-ja-eetika.md)).
 
 ## Mall: otsuse protokoll
 

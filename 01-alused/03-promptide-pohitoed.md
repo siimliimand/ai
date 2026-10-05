@@ -88,7 +88,7 @@ Kirjuta vastus kliendile.
 Sa oled meie veebipoe klienditeenindaja — rahulik ja lugupidav (roll).
 
 Kirjuta vastuskiri kliendile, kes on rahulolematu, et tellimus saabus
-kaks päeva hiljemalt (ülesanne).
+kaks päeva hiljem (ülesanne).
 
 Kontekst: klient on meie püsiklient juba kolm aastat. Hilinemise põhjus
 oli transpordifirma viga. Meie tava on hilinemise korral pakkuda 10%
@@ -96,7 +96,7 @@ soodustust järgmisele ostule (kohalik info).
 
 Vorming: e-kiri, kuni 100 sõna, sõbralik toon (väljundi vorming).
 
-Näide toonist: „Tere, Mart! Vabandame hilinemise pärast — saame aru,
+Näide toonist: „Tere, Priit! Vabandame hilinemise pärast — saame aru,
 et see on tülikas…“ (näide)
 ```
 
@@ -132,7 +132,7 @@ Olukord: klient kirjutab: *„Tere! Millal mu tellimus nr 8812 kohale jõuab? Te
 Vasta kliendi kirjale.
 ```
 
-Tulemus: suvaline — liiga ammu või leiutatud tarneajaga.
+Tulemus: suvaline — liiga kauga või leiutatud tarneajaga.
 
 **2. samm — lisa selge ülesanne.**
 
@@ -169,7 +169,7 @@ kullerifirma prognoos: 2–3 tööpäeva.
 Vasta e-kirja kujul, kuni 80 sõna, eesti keeles.
 ```
 
-**6. samm — testi ja täiusta.** Käivita prompt ja loe vastust. Näiteks: vastus on korrektne, aga ei vabanda hilinemise pärast — lisa üks rida: „Kui tellimus on hilinemas, vabanda ühe lausega.“ Ja jooksuta uuesti. Nii areneb prompt reaalses kasutuses: üks väike muudatus korraga, iga muudatuse mõju testitud. Kliendile minevat kirja vaatab enne saatmist üle inimene — nii hoiame inimese kinnitusahelas (ingl k *human-in-the-loop*); selle põhimõttest räägib põhjalikumalt dokument 3.5.
+**6. samm — testi ja täiusta.** Käivita prompt ja loe vastust. Näiteks: vastus on korrektne, aga ei vabanda hilinemise pärast — lisa üks rida: „Kui tellimus on hilinemas, vabanda ühe lausega.“ Ja jooksuta uuesti. Nii areneb prompt reaalses kasutuses: üks väike muudatus korraga, iga muudatuse mõju testitud. Kliendile minevat kirja vaatab enne saatmist üle inimene — nii hoiame inimese kinnitusahelas (ingl k *human-in-the-loop*); selle põhimõttest räägib põhjalikumalt [3.5 Ohutus: piirid ja inimene kinnitusahelas](../03-susteemi-ulesehitus/05-ohutus.md).
 
 ## Kokkuvõte
 
@@ -183,7 +183,7 @@ Vasta e-kirja kujul, kuni 80 sõna, eesti keeles.
 - eelmine → [1.2 Võimalused ja piirid: mida automatiseerida tasub](02-voimalused-ja-piirid.md)
 - järgmine → [1.4 Kus AI-automatiseerimine juba töötab: kasutujuhtumid](04-kasutujuhtumid.md)
 - **Süvenemine mallide ja testimise tsükliga** → [2.1 Head promptini: struktuur, roll, näide, väljundi vorming](../02-praktika/01-hea-prompt.md)
-- **Struktureeritud väljund** — JSON (masinloetav andmevorming) ja muud prognoositavad väljundivormid → [2.2 Struktureeritud väljund: tabelid, mallid ja JSON](../02-praktika/02-struktureeritud-valjund.md)
+- **Struktureeritud väljund** — JSON (masinloetav andmevorming) ja muud prognoositavad väljundivormid → [2.2 Struktureeritud väljund: loendid, tabelid ja JSON](../02-praktika/02-struktureeritud-valjund.md)
 - **Promptide versioonihaldus** — kuidas prompte salvestada ja versioonida → [2.6 Promptide haldus kui vara](../02-praktika/06-promptide-haldus.md)
 - **API** (programmiline liides — kuidas mudelit koodist kutsuda) → [3.1 API integratsioonid: mudel programmist välja kutsuda](../03-susteemi-ulesehitus/01-api-integratsioonid.md)
 - **AI-agendid** — süsteemid, kes kasutavad prompte plaanimiseks ja iseseisvaks tegutsemiseks → [4.1 Agendi süsteemid: mis need on ja millal vaja](../04-agendid-ja-mootmine/01-agendi-susteemid.md)

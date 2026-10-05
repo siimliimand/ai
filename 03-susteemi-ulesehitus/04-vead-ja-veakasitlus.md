@@ -16,11 +16,11 @@ Pärast seda dokumenti oskad sa:
 
 > Vead ei ole süsteemi rike, vaid osa selle tavapärasest päevast. Nii nagu poes võib kassasüsteem hanguda ja müüja võtab raha käsitsi vastu, on ka voos ette kirjutatud: mis juhtub, kui AI-mudel ei vasta õigel ajal, kui vastus tuleb vales vormis või kui e-posti teenus seisab. Kellel teed valmis on, kellel jääb veast kirje logisse — mitte hädaolukord.
 
-Selle dokumendi põhimõte ongi: **vead on normaalsed ja ette planeeritud — nad ei ole hädaolukord.** [2.5](../02-praktika/05-esimene-workflow.md) lõpus lubasime, et kui vead korduvad, tuleb veakäsitlus järele; [1.5](../01-alused/05-susteemi-anatoomia.md) ütles samast — varutee pole erand, vaid osa skeemist. Nüüd vaatame seda teed.
+Selle dokumendi põhimõte ongi: **vead on normaalsed ja ette planeeritud — nad ei ole hädaolukord.** [2.5](../02-praktika/05-esimene-workflow.md) nimetas veatüüpe ja lubas, et igal veal on aadress — nüüd vaatame, mida nendega ette võtta.
 
 ## Veeliigid: mis võib paigast minna
 
-Enamik töövoogude (workflow-de) tootmisvigadest langeb ühte viiest liigist:
+Enamik workflow’de tootmisvigadest langeb ühte viiest liigist:
 
 | Vea liik | Mis juhtub | Tavaline lahendus |
 |---|---|---|
@@ -83,7 +83,7 @@ Mida iga lahendatud viga kohta kirja panna:
 |---|---|---|
 | aeg | 13. oktoober, 14:32 | kas vead kuhjuvad kindlal ajal (tiputunnil)? |
 | sisend | kirja liik ja tellimuse number | milline sisend viis vea peale? |
-| viga | aegumine pärast 30 sekundit | mis liiki viga see oli? |
+| viga | aegumine pärast 20 sekundit | mis liiki viga see oli? |
 | tehtud tee | kordus — teine katse õnnestus | kas piisas peateest, kordusest või varuteest? |
 
 **Lihtne reegel inimese hoiatamiseks:** hoiata, kui varutee käivitus, ja kui sama viga kordub ette määratud arv kordi (näiteks viis korda päevas). Üks kordus ei vaja inimest; varutee ja korduv viga tähendab, et midagi muutus — seda peab keegi teadma. Põhjalikumalt vaatab [4.6 Monitooring tootmises](../04-agendid-ja-mootmine/06-monitooring.md).

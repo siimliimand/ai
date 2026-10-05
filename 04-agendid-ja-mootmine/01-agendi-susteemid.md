@@ -25,7 +25,7 @@ AI-agent (süsteem, kellel on eesmärk, tööriistad ja otsustamisvabadus) erine
 
 **2. Tööriistad — mida ta saab kasutada.** Kehtib 3.3 põhimõte: tööriistakutse (ingl k *function calling*) tähendab, et mudel küsib, süsteem teeb — agent ei saa ise midagi ära teha, ta saab ainult nõuda, et sinu programm teeks. Tüübid: andmeotsing, täpne arvutus, väljaspool süsteemi tegevus — viimane alati kinnitusahelaga.
 
-**3. Otsustamisvabadus — ta ise valib järjekorra ja sammud.** Tegelik erinevus ei ole tööriistades ega mudelis, vaid tees: workflow-s on tee ette kirjutatud (2.3), agendi järgmise sammu otsustab mudel ise — selle põhjal, mida ta seni teada sai.
+**3. Otsustamisvabadus — ta ise valib järjekorra ja sammud.** Tegelik erinevus ei ole tööriistades ega mudelis, vaid teesis: workflow-s on tee ette kirjutatud (2.3), agendi järgmise sammu otsustab mudel ise — selle põhjal, mida ta seni teada sai.
 
 Kolme osa koostöö on agendi tsükkel:
 
@@ -94,7 +94,7 @@ Kõigis neljas reas eelistab tabel workflow-d — ja see ongi mõte: agent on õ
 
 Enamikul ülesannetest on tee suures osas ikkagi teada — ja seal hoiab workflow ta ettearvatavana. **Hübriid (workflow agendi sammuga)** paneb mõlemad kokku: fikseeritud põhitee ja ÜKS agendi samm seal, kus tee pole ette kirjutatav. See on tihti parim lahendus: iga osa teeb seda, mida ta kõige paremini oskab.
 
-Kus agendi samm paigutada? Kohta, kus workflow laguneks — kui üks punkt vajaks iga uue juhtumiliigi jaoks uut haru, kasvab harude hulk kiiremini, kui jõuad neid hooldada. Fikseeritud osa teeb kindlad sammud, agent lahendab ülejäänu — ja agendi väljund ei jõua enam otse kliendini: see on kavand, mis läbib sama kinnituse nagu iga teine tee. Nii annab esimene ettearvatuse, teine paindlikkuse ja kinnitusahel püüab viga enne kliendini jõudmist.
+Kus agendi samm paigutada? Kohta, kus workflow laguneks — kui üks punkt vajaks iga uue juhtumiliigi jaoks uut haru, kasvab harude hulk kiiremini, kui jõuad neid hooldada. Fikseeritud osa teeb kindlad sammud, agent lahendab ülejäänu — ja agendi väljund ei jõua enam otse kliendini: see on kavand, mis läbib sama kinnituse nagu iga teine tee. Nii annab esimene ettearvatavuse, teine paindlikkuse ja kinnitusahel püüab viga enne kliendini jõudmist.
 
 ## Näide samm-sammult: e-poo valib tee
 
@@ -112,7 +112,7 @@ Kus agendi samm paigutada? Kohta, kus workflow laguneks — kui üks punkt vajak
 
 - **AI-agent on süsteem, kellel on eesmärk, tööriistad ja otsustamisvabadus**, ja töötab agendi tsüklis: plaani → tegutse → vaata → otsusta. Ringide arvu otsustab agent — piiri paned sina.
 - **Valik kuju:** tee ette teada → workflow; tee sõltub sisust, pole ette kirjutatav, vead pole kallid ja lihtsam kuju ei piisanud → agent.
-- **Neli riski:** kulud kasvavad (3.6), viga kandub edasi, ettearvatus kadub (4.5) ja ohutus vajab tegelikke kaitsekihte, mitte ainult keeldu juhises (3.5).
+- **Neli riski:** kulud kasvavad (3.6), viga kandub edasi, ettearvatavus kadub (4.5) ja ohutus vajab tegelikke kaitsekihte, mitte ainult keeldu juhises (3.5).
 - **Hübriid — fikseeritud põhitee + agendi samm ühes punktis, alati kinnitusega — on tihti parim lahendus** ja mõistlik lähtekoht.
 - **Lihtsam lahendus, mis töötab, on parem kui muljetavaldav agent, mis vahel eksib.** Agendid on võimas tööriist, mitte staatuse sümbol.
 

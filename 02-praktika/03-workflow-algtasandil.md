@@ -19,7 +19,7 @@ Dokumendist [1.5](../01-alused/05-susteemi-anatoomia.md) teame süsteemi seitset
 
 ## Sisendist väljundini: sammude mõte
 
-Workflow on sammude jada, mis käib alati samas järjekorras: iga samm võtab sisendi, teeb ühe asja ja annab väljundi — järgmise sammu sisendi — kuni vool jõuab lõppeni. Korralikult kirja pandud sammul on kolm asja selged: mis ta saab, teeb ja annab edasi.
+Workflow on sammude jada, mis käib alati samas järjekorras: iga samm võtab sisendi, teeb ühe asja ja annab väljundi — järgmise sammu sisendi — kuni vool jõuab lõppeni.
 
 Näide: Mari arvete voog (1.2: iga kuu umbes 40 PDF-arvet raamatupidamisse):
 
@@ -48,13 +48,13 @@ Tingimuse lahendamiseks on kaks teed — nende vaheline valik on üks olulisemai
 | **Automaatne reegel** | kindel võrdlus andmetega: „summa on üle 1000“, „väli on tühi“ | teave on kindlas väljas ja reegel mahub ühte lausesse — tulemus on kiire, odav ja seletatav |
 | **AI klassifitseerimine** | mudel loeb vaba teksti ja vastab struktureeritud väljundiga („liik = kaebus“) | otsus elab tekstis: „kas see kiri on vihane?“ ei mahu ühegi reeglisse |
 
-Reegel annab fakti, mudel annab hinnangu. Lihtne test: kui otsuse saab langetada, vaadates ainult numbreid ja välju, pane reegel; kui selleks tuleb tekst sisse lugeda ja tunda, kasuta mudelit. Kuna mudeli hinnang on arvamus, mitte fakt, anna talle alati ka „teadmata“ valik, mis viib inimesele. Kui aga tingimust ei saa ette kirjutada isegi mudeliga, on see märk agendi süsteemist (vt [4.1](../04-agendid-ja-mootmine/01-agendi-susteemid.md)): seal otsustab mudel iga järgmise sammu ise. Jää siiski workflow juurde, kuni see piisab — ette kirjutatud tee on kontrollitavam ja sageli ka parem.
+Reegel annab fakti, mudel annab hinnangu. Lihtne test: kui otsuse saab langetada, vaadates ainult numbreid ja välju, pane reegel; kui selleks tuleb tekst sisse lugeda ja tunda, kasuta mudelit. Kuna mudeli hinnang on arvamus, mitte fakt, anna talle alati ka „teadmata“ valik, mis viib inimesele. Kui aga tingimust ei saa ette kirjutada isegi mudeliga, on see märk sellest, et vaja läheb agendi süsteemi (vt [4.1](../04-agendid-ja-mootmine/01-agendi-susteemid.md)): seal otsustab mudel iga järgmise sammu ise. Jää siiski workflow juurde, kuni see piisab — ette kirjutatud tee on kontrollitavam ja sageli ka parem.
 
 > **Lihtsalt öeldes:** tingimus on ristmik, haru on tee, mis sealt läheb: kui ristmikul loetakse numbreid, pane sinna reegel; kui tuleb kirja lugeda, pane mudel.
 
 ## Silmused: kui kirju on palju
 
-Nüüd tuleb päevaga sisse korraga pakkena 40 kliendikirja — igaüks käib läbi sama tee. Kas ehidad 40 workflow-t? Ei — ehidad ühe ja lisad **silmuse (ingl k *loop*)**: „võta järgmine kiri ja aja ta läbi sama voo, kuni kast on tühi.“
+Korraga tuleb päevaga sisse 40 kliendikirja — nagu üks pakk. Igaüks käib läbi sama tee. Kas ehidad 40 workflow-t? Ei — ehidad ühe ja lisad **silmuse (ingl k *loop*)**: „võta järgmine kiri ja aja ta läbi sama voo, kuni kast on tühi.“
 
 ```text
    kast: 40 kirja
@@ -78,14 +78,14 @@ Nüüd tuleb päevaga sisse korraga pakkena 40 kliendikirja — igaüks käib l�
 
 Kaks nüanssi silmuse juures:
 
-1. **Ehita ja proovi läbi ühe kirjaga, siis lase silmusel korrata.** Silmus ei muuda teed — ainult korduste arvu; kui voo sees on viga, kordab ta seda 40 korda. Seepärast käivita esimene läbimine ühe kirjaga.
+1. **Ehita ja proovi läbi ühe kirjaga, siis lase silmusel korrata.** Silmus ei muuda teed — ainult korduste arvu; kui voo sees on viga, kordab ta seda 40 korda.
 2. **Ühe kirja nurjumine ei tohi peatada teisi.** Kui üks kiri ei klassifitseeru, jääb ta nurjunute nimekirja ja silmus liigub edasi. Mida nurjunutega edasi teha, on [3.4 Vead ja veakäsitluse](../03-susteemi-ulesehitus/04-vead-ja-veakasitlus.md) teema.
 
 > **Lihtsalt öeldes:** silmus on konveierilint — ehitad ainult ühe tööjaama, lind toimetab iga toote sellest läbi; viga ühes tootes ei peata linti.
 
 ## Inimene kinnitusahelas workflow sammuna
 
-Workflow-s saab kasutada ka sammu, mis pole masina töö: **kinnituse samm**. Voog jõuab kindla kohani, paneb töö inimese loendisse ja **ootab** — ei liigu edasi, enne kui inimene on ütelnud „jah“ või lükanud tagasi. Alles pärast seda jätkub jada.
+Workflow-s saab kasutada ka sammu, mis pole masina töö: **kinnituse samm**. Voog jõuab kindla kohani, paneb töö inimese loendisse ja **ootab** — ei liigu edasi, enne kui inimene on ütelnud „jah“ või lükanud tagasi.
 
 Kus kinnituse samm paigutada? [1.2](../01-alused/02-voimalused-ja-piirid.md) andis vastuse: seal, kus viga maksab — enne, kui süsteem puudutab välismaailma. Kolm tavalist paigutust:
 
@@ -124,6 +124,9 @@ Kus kinnituse samm paigutada? [1.2](../01-alused/02-voimalused-ja-piirid.md) and
         │                  võta saatmise ja laoseisu andmed baasist
         │                  koosta vastus nende andmete põhjal
         │                  vastus läheb kliendile otse
+        │                  (1.4 lisab nüanssi: iseseisvalt saab minna
+        │                   ainult tekst, mille sisu on eelnevalt
+        │                   kinnitatud andmetest)
         │
         ├── kaebus ────► HARU C: alati inimesele
         │                  kiri ja kogu kontekst lähevad Marile
@@ -155,7 +158,7 @@ Tingimused kiri kirja kohta:
 - **Silmus kordab sama teed kõigi sisendite jaoks:** proovi läbi ühe kirjaga, siis lase korrata; üks nurjunud sisend ei peata teisi.
 - **Kinnituse samm peatab voo inimese jaoks** — seal, kus viga maksab, jääb viimane sõna inimesele.
 - **Tööriistad (n8n, Make, Zapier) on ainult töölaud** — põhimõtted kehtivad kõigis.
-- Kui teed ei saa ette kirjutada, on see märk agendi süsteemist (vt 4.1) — aga enne proovi alati lihtsamat kuju.
+- Kui teed ei saa ette kirjutada, on see märk sellest, et vaja läheb agendi süsteemi (vt 4.1) — aga enne proovi alati lihtsamat kuju.
 
 ## Mis edasi?
 

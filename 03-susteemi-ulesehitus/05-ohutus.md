@@ -20,7 +20,7 @@ Pärast seda dokumenti oskad sa:
 
 Iga uus iseseisvus, mille süsteemile annad, suurendab kasu ja kahju korraga. Süsteem, mis ainult loeb andmeid ja koostab visandeid, eksib ohutult: raisatud minut. Süsteem, mis ise kirju saadab, eksib klientide silmis. Süsteem, mis ise makseid teeb, eksib rahas — ja rahaline viga on tihti pöördumatu.
 
-| Süsteemi iseseisvus | Vea maksimumkahjum | Miinimum-kaitse |
+| Süsteemi iseseisvus | Vea maksimumkahjum | miinimumkaitse |
 |---|---|---|
 | loeb ja koostab visandeid | raisatud aeg | inimese ülevaatus enne kasutust |
 | saadab ja muudab ise | viga jõuab kliendini | kinnituspunktid reeglite järgi + jälge |
@@ -66,7 +66,7 @@ Iga automaatne tegevus jääb jälge (ingl k *audit trail* — iga automaatse te
 
 Enamikus töövoogudes võib kinnitus kergeneda, kui süsteem end tõestab. Tundlikus valdkonnas — kus üks viga puudutab tervist, raha või inimese õigusi — ära seda tee: seal on inimene kinnitusahelas (ingl k *human-in-the-loop* — töövoog, kus inimene kinnitab tulemuse enne kasutust) kogu ajaks, mitte ainult eranditel.
 
-| Valdkond | Miks riskantne | Miinimum-ohutus |
+| Valdkond | Miks riskantne | miinimumohutus |
 |---|---|---|
 | Tervisenõuanded | süsteem ei tunne inimese seisundit; vale soovitus võib tervist kahjustada | vastab ainult kataloogi andmetega; nõuanded suunab inimesele; erandid logitakse |
 | Rahalised kinnitused | viga on otse ja pöördumatult rahas | rahalisi kinnitusi süsteem iseseisvalt ei tee — kõik rahalised toimingud läbivad inimese allkirja |
@@ -88,7 +88,7 @@ Süsteemivestluse juhis (ingl k *system prompt*) on prompt (mudelile antav juhis
 
 Enne, kui süsteem klientide või päris andmeteni pääseb, käi kirjalikult läbi kaks küsimust:
 
-**1. „Mis on HALVIMASI asi, mida see süsteem teha saab?“**
+**1. „Mis on halvim asi, mida see süsteem teha saab?“**
 
 Küsi mitte tõenäolise, vaid võimaliku kohta. Konkreetselt: „saadab kirju“ → „saadab sada kirja vale sõnastusega“; „muudab andmeid“ → „kustutab kirje, mida tagasi võtta ei saa“.
 
@@ -123,7 +123,7 @@ Variant C pole „vähem automatiseerimist“ — klient saab laoseisu ja hinnad
 - **Neli kaitsekihti:** mida tohib (tehniline piirang), mis vajab kinnitust (inimene enne), mille peal peatub (peatusnupp ühe sammuga) ja mis jääb jäljele (mis, millal, miks).
 - **Tundlikes valdkondades — tervis, raha, lepingud, värbamine — on inimene kinnitusahelas alati**, mitte ainult eranditel.
 - **Juhis süsteemivestluses on vajalik, aga mitte piisav** — sõna ei pea vastu, tehniline piirang peab.
-- **Ohutuse test:** „Mis on halvim, mida see süsteem teha saab?“ ja „Kas disain hoiab selle ära?“ — kui vastus on lootus, pole süsteem valmis.
+- **Ohutuse test:** „Mis on halvim asi, mida see süsteem teha saab?“ ja „Kas disain hoiab selle ära?“ — kui vastus on lootus, pole süsteem valmis.
 
 ## Mis edasi?
 

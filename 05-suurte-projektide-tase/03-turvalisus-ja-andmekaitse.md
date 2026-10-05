@@ -56,9 +56,9 @@ Mittetäitmine on sinu vastutus: kui pakkuja kasutab andmeid treeninguks, kuigi 
 
 ## AI-spetsiifilised küsimused: mälu, automaatotsused, jälge
 
-**1. Kas vastustest saab välja lekkida teiste klientide andmed?** Pikaaegne mälu ja logid ([4.3](../04-agendid-ja-mootmine/03-pikaaegne-malu.md)) on uus risk: kui mälu ei lõiga kliente selgelt, võib ühe kliendi info jõuda teise kliendi vastusesse. Kaitse on disainis: mälu ja logid on kliendi järgi eraldatud ning logidesse näeb ainult see, kellel rolli järgi õigus.
+**1. Kas vastustest saab välja lekkida teiste klientide andmed?** Pikaaegne mälu ja logid ([4.3](../04-agendid-ja-mootmine/03-pikaaegne-malu.md)) on uus risk: kui mälu ei lõika kliente selgelt, võib ühe kliendi info jõuda teise kliendi vastusesse. Kaitse on disainis: mälu ja logid on kliendi järgi eraldatud ning logidesse näeb ainult see, kellel rolli järgi õigus.
 
-**2. Kas süsteem teeb automaatsed otsused inimeste kohta?** Automaatse otsuse põhimõte (GDPR-i art. 22): inimene peab saama puhtautomaatset otsust — näiteks soodustuse keeldu — vaidlustada ja jõudma inimeseni. Seega kaks nõuet: tundlikes otsustes on inimene kinnitusahelas ([3.5](../03-susteemi-ulesehitus/05-ohutus.md)) — süsteem koostab visandi, otsustab ja vastutab inimene — ning kliendile on nähtav vaidlustamise tee: kes inimene vastab ja millal.
+**2. Kas süsteem teeb automaatsed otsused inimeste kohta?** Automaatse otsuse põhimõte (GDPR-i art. 22): inimene peab saama puhtautomaatset otsust — näiteks soodustuse keeldu — vaidlustada ja jõuda inimeseni. Seega kaks nõuet: tundlikes otsustes on inimene kinnitusahelas ([3.5](../03-susteemi-ulesehitus/05-ohutus.md)) — süsteem koostab visandi, otsustab ja vastutab inimene — ning kliendile on nähtav vaidlustamise tee: kes inimene vastab ja millal.
 
 **3. Kuidas näidata, et tegevus oli korrektne?** Jälge (ingl k *audit trail* — iga tegevuse kirje) on [3.5](../03-susteemi-ulesehitus/05-ohutus.md) kaitsekihidest tuttav: mis, millal, miks. Jälg pole ainult vee uurimiseks — ta on tõend: küsimusele „miks süsteem andis just sellise vastuse?“ saab vastuse kirjetest, mitte mälestustest. Üks piir: jälge on ise andmekogu — ka logil peab olema salvestuspiir.
 

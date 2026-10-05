@@ -7,7 +7,7 @@
 Pärast seda dokumenti oskad sa:
 
 - selgitada, mis on monitooring (ingl k *monitoring* — tootmises jälgimine) ja miks eile hästi töötanud süsteem võib täna halvemini töötada;
-- lugeda kuut põhimõõdikut (ingl k *metric* — 4.5-s „mõõdik“; siin jälgime sama numbrit pidevalt tootmises) ja öelda, milline arv on märk ja milline müra;
+- lugeda kuut põhimõõdikut (ingl k *metric* — 4.5-s „mõõdik“; osa neist jälgime nüüd pidevalt tootmises) ja öelda, milline arv on märk ja milline müra;
 - seada püsti hoiatus (ingl k *alert* — automaatne teavitus, kui mõõdik läheb lubatud piirist välja), millel on konkreetne hoiatuskünnis (ingl k *alert threshold* — piir, mille ületamisel teavitus käivitub);
 - pidada 15-minutilist nädalarutiini, mis toidab testikomplekti ([4.5](05-hindamine.md)) ja promptide uuendusi ([2.6](../02-praktika/06-promptide-haldus.md)).
 
@@ -39,7 +39,7 @@ Erinevus hindamisest mahub ühte lausesse: hindamine ([4.5](05-hindamine.md)) on
 | **veamäär** (vigade osakaal) | mitu % päringutest lõppes veaga — aegumine, rikutud väljund, süsteemiväline viga; kirjed tulevad [3.4](../03-susteemi-ulesehitus/04-vead-ja-veakasitlus.md) logist | tõus üle tavalise taseme: midagi muutus sisendis, vormis või välises teenuses |
 | **inimese sekkumise määr** (mitu % juhtumitest läks inimesele) | mitu % juhtumitest pöördus inimesele ja mitu % kinnitustest muudeti enne saatmist (vt [4.5](05-hindamine.md) mõõdikuid) | tõus kummalgi näol = kvaliteet on langenud või sisend on muutunud |
 | **latentsus** | kui kaua sisendist vastuseni kulub | aeglustus viitab pakkuja muutusele või ummikule — tehniline pool [4.7-s](07-joudlus-ja-latentsus.md) |
-| **kulu** | kui palju süsteem päevas kulutab ([3.6](../03-susteemi-ulesehitus/06-kulude-haldamine.md)) | hüpe ilma mahu kasvuta = midagi jookseb kavatsamatult |
+| **kulu** | kui palju süsteem päevas kulutab ([3.6](../03-susteemi-ulesehitus/06-kulude-haldamine.md)) | hüpe ilma mahu kasvuta = midagi jookseb kontrollimatult |
 | **erijuhud** | mitu kirja läks varuteele või inimesele | järsk tõus: [3.4](../03-susteemi-ulesehitus/04-vead-ja-veakasitlus.md) reegel — hoiata, kui varutee käivitus ja viga kordub |
 
 Esimesed kolm numbrit tulevad samadest kirjetest, mida vool juba 2.5-s ajalukku kirjutas — monitooring pole uue süsteemi ehitamine, vaid olemasolevate kirjete regulaarne lugemine. Mõõdikud võib koondada juhtpaneelile (ingl k *dashboard* — kõik arvud ühel lehel ühel pilgul), aga esimese sammuna piisab nädalasest kokkuvõttest — enamikus no-code tööriistades on see valmis mallina olemas.
@@ -79,9 +79,9 @@ Kodutoa poe tagastusvoog ([2.5](../02-praktika/05-esimene-workflow.md)) on töö
 
 **(b) Inimese sekkumise määr tõusis 12% → 19% kolme nädalaga.** Üksikut nädalat vaadates polnud hüpet ja hoiatus ei käivitunud — tõus oli vaikne. Märkas nädalane rutiin: klassifitseerija ei tundnud ära uut tootekategooriat (küünlajalad), mille jaoks ta polnud õpetatud, ja need kirjad läksid „arusaamatu kirjana“ Piretile. Testikomplekti lisati küünlajalgade juhtumid ja klassifitseerija juhisele lisati näited (4.5 kuldstandard; 2.6 prompti uuendus). Järgmisel nädalal langes määr 13%-ni.
 
-**(c) Kulu tõusis 30%.** Esimene refleks: midagi jookseb kavatsamatult. Juhtpaneeli võrdlus näitas, et maht oli kasvanud täpselt sama palju — uued kliendid toovad rohkem kirju. Kulu kasvas koos mahuga, kvaliteet jäi samaks. Tegevust pole vaja: see pole viga, vaid süsteemi kasv.
+**(c) Kulu tõusis 30%.** Esimene refleks: midagi jookseb kontrollimatult. Juhtpaneeli võrdlus näitas, et maht oli kasvanud täpselt sama palju — uued kliendid toovad rohkem kirju. Kulu kasvas koos mahuga, kvaliteet jäi samaks. Tegevust pole vaja: see pole viga, vaid süsteemi kasv.
 
-| Näitaja | Enne | Pärast | Tegevus |
+| Mõõdik | Enne | Pärast | Tegevus |
 |---|---|---|---|
 | veamäär | 2% | 14% (teisipäeval) | hoiatus → põhjus: pakkuja muutis vastuseaegu → korduste arv suurendati; nädalaga tagasi 2% |
 | inimese sekkumise määr | 12% | 19% (kolme nädalaga) | nädalane rutiin tabas põhjuse: uus tootekategooria → testjuhtumid ja näited juurde; järgmisel nädalal 13% |

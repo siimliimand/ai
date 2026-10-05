@@ -69,7 +69,7 @@ Kaks tehnilist teemat jäävad siin lühikeseks: kuidas neid osi programmeeritul
 
 Sama anatoomia saab ellu astuda kolmes vormis — mida suurem kuju, seda rohkem osi on süsteemi sisse ehitatud:
 
-**a) Üksik prompt.** Inimene teeb kõik ülejäänu: avab mudeliga tööriista, kleebib teksti, loeb vastuse läbi ja kopeerib sinna, kuhu vaja. Seitsmest osast on olemas ainult juhis ja mudel — käivitaja, kontroll ja hoidmine on inimese õlgadel. Piisab, kui ülesanne esineb päevas mõni kord.
+**a) Üksik prompt.** Inimene teeb kõik ülejäänu: avab mudeliga tööriista, kleebib teksti, loeb vastuse läbi ja kopeerib sinna, kuhu vaja. Seitsmest osast teeb masin ainult juhise ja mudeli — käivitaja, sisendandmed, kontroll ja hoidmine jäävad inimese õlgadele. Piisab, kui ülesanne esineb päevas mõni kord.
 
 **b) Workflow (töövoog — automatiseeritud sammude jada).** Sammud on ette kirjutatud ja käivitaja paneb need iseseisvalt käima: e-kiri saabub, süsteem liigitab, võtab andmed, koostab kavandi, suunab inimesele kinnituseks. Tingimused otsustavad, millist teed pidi süsteem läheb („kui kirja pole võimalik kindlalt liigitada, mine otse inimesele“). Kõik seitse osa on nähtavad ja täpselt määratud — see on 2. tasandi peamine teema.
 

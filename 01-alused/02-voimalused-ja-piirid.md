@@ -23,7 +23,7 @@ Dokumendist 1.1 teame: mudel ennustab teksti jätku, mitte ei otsi fakte üles. 
 
 | Kategooria | Näide | Miks AI-l õnnestub |
 |---|---|---|
-| **Tekstide kavandid** | vastused kliendikirjadele, tootekirjeldused, koosoleku kutse | mudel on treeningul „lugenud“ miljoneid sarnaseid tekste ja koostab ladusa visandi sekunditega; inimene viimaseerib |
+| **Tekstide kavandid** | vastused kliendikirjadele, tootekirjeldused, koosoleku kutse | mudel on treeningul „lugenud“ miljoneid sarnaseid tekste ja koostab ladusa visandi sekunditega; inimene viimistleb |
 | **Klassifitseerimine** | e-kirja jaotamine rühmadesse „müük“, „tugi“, „arve“ | vastuseks paar sõna; viga on kergesti märgata ja täpsustada saab näidistega |
 | **Kokkuvõtete tegemine** | 30-leheküljeline leping viie punktini, kohtumise kokkuvõte | pika teksti tihendamine on just see, milleks ennustusloogika kõige paremini sobib; allikale saab nõuda viitamist |
 | **Info eraldamine ja vormingu teisendus** | arvete andmed tabelisse, punktloendist e-kirja visand | struktuuri muutmine on talle loomulik; kontroll on kiire, võrreldes välju allikaga (eeldus: dokument mahub kontekstiaknasse — ingl k *context window*, tekstihulk, mida mudel korraga näeb) |
@@ -57,7 +57,7 @@ Keelemudel (ingl k *large language model*, LLM — suur keelemudel) töötab tek
 Kõige tähtsam küsimus. Kui kliendikirja visandid on 90% korrektsed ja parandad need enne saatmist, säästad aega. Kui arvete summad on 90% õiged, on iga kümnendal arvel viga — ja keegi peab selle üles leidma. Küsi endalt: kas 90% õige on veel kasu (visand, mida parandan) või juba kahju (number, mida enam keegi ei kontrolli)?
 
 **4. Näidiste olemasolu — kas on näiteid, kuidas head tööd tehtakse?**
-Mudel jäljib eeskuju. Kümme head vastust klientidele või kolm head pakkumust on kuld: annad need kaasa promptile (mudelile antav juhis) ja tulemus langeb sinu stiili. Kui head tööd pole kusagil näitel, ei tea seda mudelki — palve „kirjuta meile müügisõnum“ annab ilma näideteta ainult keskpärase. Kuidas juhiseid ja näidiseid hästi sõnastada, õpetab dokument [1.3 Promptide põhitõed](03-promptide-pohitoed.md).
+Mudel jäljib eeskuju. Kümme head vastust klientidele või kolm head pakkumust on kuld: annad need kaasa promptile (mudelile antav juhis) ja tulemus langeb kokku sinu stiiliga. Kui head tööd pole kusagil näidata, ei tea seda mudelki — palve „kirjuta meile müügisõnum“ annab ilma näideteta ainult keskpärase. Kuidas juhiseid ja näidiseid hästi sõnastada, õpetab dokument [1.3 Promptide põhitõed](03-promptide-pohitoed.md).
 
 Vastused annavad kohe otsustusreegli:
 
@@ -67,7 +67,7 @@ Vastused annavad kohe otsustusreegli:
 | kolm „jah“ ja üks „ei“ | automatiseerida osaliselt ja jätta inimene kinnitusahelasse (ingl k *human-in-the-loop* — inimene vaatab tulemuse enne kasutust üle) |
 | kaks või enam „ei“ | veel mitte automaatiseerida — korrasta ülesanne ja kogu näited ise |
 
-Kuidas selliseid töovoogu — ja kui sammude jada kasvab mitmeastmeliseks, AI-agenti (süsteemi, mis täidab ülesannet iseseisvalt samm-sammult) — üles ehitatakse, kirjeldab dokument 1.5 ning 2. taseme juhendid.
+Kuidas selliseid töovoogu — ja kui sammude jada kasvab mitmeastmeliseks, AI-agenti (süsteemi, mis täidab ülesannet iseseisvalt samm-sammult) — üles ehitatakse, kirjeldavad dokument 1.5 ja 2. taseme juhendid.
 
 ## Punased lipud: millal EI tasub automatiseerida
 
@@ -89,14 +89,14 @@ Võtame väljamõeldud näiteks **„Kodutoa pood“** — Mari müüb e-poos k�
 
 **3. Hinnapakkumiste lõplik kinnitus.** Suuremad tellijad küsivad paar korda kuus pakkumust. *Korduvus:* jah. *Tekstipõhisus:* jah. *Vea talutavus:* puudub — pakkumus on lubadus: liiga madal hind on otsene kahjum, liiga kõrge ajab kliendi ära. *Näidised:* jah. **Otsus: ei.** AI võib visandi varasemate näidiste põhjal koostada, aga lõpliku kinnituse teeb Mari ise — see on vastutusotsus, mida ükski korduvus ei õigusta.
 
-**4. Turundustekstide koostamine.** Toodete kirjeldused ja uudiskiri kord kuus. *Korduvus:* jah. *Tekstipõhisus:* jah. *Vea talutavus:* keskmine — üks halb postitus ei maksa kohe midagi, aga ebaühtlane toon kulutab brändi. *Näidised:* osaliselt — Mari tunneb sobivat toont, aga pole kirja pannud, milline on „meie hääl“. **Otsus: jah, pärast ettevalmistust** — Mari paneb kõigepealt kokku viis enda parimat teksti näidiseks; siis koostab mudel variante, mille hulgast ta valib ja viimaseerib. Ilma näideteta oleks otsus olnud „pole veel valmis“.
+**4. Turundustekstide koostamine.** Toodete kirjeldused ja uudiskiri kord kuus. *Korduvus:* jah. *Tekstipõhisus:* jah. *Vea talutavus:* keskmine — üks halb postitus ei maksa kohe midagi, aga ebaühtlane toon kulutab brändi. *Näidised:* osaliselt — Mari tunneb sobivat toont, aga pole kirja pannud, milline on „meie hääl“. **Otsus: jah, pärast ettevalmistust** — Mari paneb kõigepealt kokku viis enda parimat teksti näidiseks; siis koostab mudel variante, mille hulgast ta valib ja viimistleb. Ilma näideteta oleks otsus olnud „pole veel valmis“.
 
 Pane tähele mustrit: samad neli küsimust andsid kolm jaatavat otsust ja ühe keeldu. Automatiseerimine pole lüliti vahetamine, vaid valik, kus inimene protsessis seisab.
 
 ## Kokkuvõte
 
 - **Neli otsustusküsimust:** korduvus, tekstipõhisus, vea talutavus, näidiste olemasolu — mida rohkem jaatavaid vastuseid, seda kindlam on automatiseerimine.
-- **AI tugevad alad:** tekstide kavandid, klassifitseerimine, kokkuvõtted ning info eraldamine ja vormingu teisendus — tekstitöö, kus hea tulemus piisab ja inimene viimaseerib.
+- **AI tugevad alad:** tekstide kavandid, klassifitseerimine, kokkuvõtted ning info eraldamine ja vormingu teisendus — tekstitöö, kus hea tulemus piisab ja inimene viimistleb.
 - **Inimene jääb asendamatuks:** vastutusotsused, kriisikommunikatsioon, pakkumuste kinnitus ja kliendisuhte olulised hetked.
 - **Punased lipud:** kui head tulemust pole näidata, fakte pole kusagil või kontroll maksab rohkem kui töö, ära automatiseeri.
 - **Otsus on harva binaarne:** kõige sagedasem õige vastus on „jah, aga inimene kinnitusahelas“.
