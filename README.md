@@ -33,12 +33,12 @@ Kogu on järjestatud **5 tasandiks**. Alusta alati 1. tasemest — iga järgmine
 
 | # | Dokument | Kirjeldus | Olek |
 | --- | --- | --- | --- |
-| 2.1 | Head promptini: struktuur, roll, näide, väljundi vorming | Süvenemine: promptimallid, versioonid ja testimine pikemas tsüklis | 📋 |
-| 2.2 | Struktureeritud väljund: tabelid, mallid ja JSON | Kuidas saada mudelilt ennustatavas vormis vastuseid | 📋 |
-| 2.3 | Workflow algtasandil: sammud ja tingimused | Mitmeosalised protsessid, otsustuspunktid ja tingimused | 📋 |
-| 2.4 | Sisendid ja andmete ettevalmistamine | Kuidas andmeid koguda, puhastada ja vormindada nii, et mudel saaks hästi töötada | 📋 |
-| 2.5 | Esimene automatiseeritud workflow otsast lõpuni | Täielik näide ühe automatiseeritud töövooga algusest lõpuni | 📋 |
-| 2.6 | Promptide haldus kui vara | Promptide salvestamine, versioonihaldus ja taaskasutamine | 📋 |
+| 2.1 | [Head promptini: struktuur, roll, näide, väljundi vorming](02-praktika/01-hea-prompt.md) | Süvenemine: promptimallid, versioonid ja testimine pikemas tsüklis | ✅ |
+| 2.2 | [Struktureeritud väljund: tabelid, mallid ja JSON](02-praktika/02-struktureeritud-valjund.md) | Kuidas saada mudelilt ennustatavas vormis vastuseid | ✅ |
+| 2.3 | [Workflow algtasandil: sammud ja tingimused](02-praktika/03-workflow-algtasandil.md) | Mitmeosalised protsessid, otsustuspunktid ja tingimused | ✅ |
+| 2.4 | [Sisendid ja andmete ettevalmistamine](02-praktika/04-sisendid-ja-andmed.md) | Kuidas andmeid koguda, puhastada ja vormindada nii, et mudel saaks hästi töötada | ✅ |
+| 2.5 | [Esimene automatiseeritud workflow otsast lõpuni](02-praktika/05-esimene-workflow.md) | Täielik näide ühe automatiseeritud töövooga algusest lõpuni | ✅ |
+| 2.6 | [Promptide haldus kui vara](02-praktika/06-promptide-haldus.md) | Promptide salvestamine, versioonihaldus ja taaskasutamine | ✅ |
 
 ### 3. tase — Süsteemi ülesehitus (`03-susteemi-ulesehitus/`)
 

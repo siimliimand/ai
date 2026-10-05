@@ -93,7 +93,7 @@ Kolm reaalsuse reeglit:
 
 ## Näide samm-sammult: tagastustaotluse töötlus
 
-Olukord: e-poes saabub päevas umbes 40 tagastustaotlust. Varem luges klienditeenindaja iga taotluse, kontrollis ostu kuupäeva ja tagastustingimusi ning kirjutas vastuse — keskmiselt 5 minutit, kokku ligi kolm tundi päevas.
+Olukord: e-poes saabub päevas umbes 40 tagastustaotlust. Varem luges klienditeenindaja iga taotluse, kontrollis ostu kuupäeva ja tagastustingimusi ning kirjutas vastuse — keskmiselt 5 minutit, rohkem kui kolm tundi päevas (40 × 5 min = 3 h 20 min, realistlikult pooled).
 
 Voog käib nii:
 
