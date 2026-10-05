@@ -69,6 +69,16 @@ Kui kasutaja alustab uut vestlust ja annab sisendi, teen alati **esimesena** jä
   - lõplik ülevaade ja kooskõlastus → 1 subagent (kontrollib keelt, struktuuri ja README.md linge).
 - Enne subagentidele töö andmist kirjutan neile täpsed juhised: teema, sihtpublik, keel, stiil ja väljundi vorming.
 
+### Paralleelne dokumendikirjutus (kinnitatud protsess)
+
+- **Tempo: alustame katsega 2–3 dokumenti paralleelselt** ühes sessioonis. Kui kooskõla kvaliteet on hea, võib tõsta kuni 5 peale.
+- **Enne paralleelset kirjutamist valmistan mina "briffing-paki"**, mille saab iga kirjutav subagent:
+  1. dokumendi täpne sisuulatus: mis selgitatakse põhjalikult, mis mainitakse vaid lühidalt ja lingitakse edasi (vältimaks kattumist);
+  2. ühine terminite nimekiri: kinnitatud eestikeelsed vasted ja selgitused (kõik subagendid kasutavad samu termineid);
+  3. stiilistandardid (vt punkt 3 stiilistandardid) ja dokumendimall.
+- **Pärast paralleelset kirjutamist alati 1–2 ülevaatavat subagenti**, kes kontrollivad dokumendide VAHELIST kooskõla (terminid, kattuvus, lingid, stiil) enne commitit.
+- **Tase 1 dokumendid on iseseisvad** — sobivad hästi paralleelseks. Tasanditel 3–5 on dokumendid tihedamini seotud; seal kirjutada ettevaatlikumalt või järjestikku.
+
 ## 7. Sessiooni lõpp: commit ja push
 
 - **Iga sessiooni lõpus tuleb tehtud töö commitida ja pushida GitHubi** (`origin/main`).
